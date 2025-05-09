@@ -16,7 +16,7 @@ header {
   background-image: url('images/hero-banner.jpg'); /* Uses the new banner image */
   background-size: cover;                          /* Fill the entire section */
    background-position: top center; /* shift focus to top */
-  height: 70vh;  /* change from 100vh */     /* Full viewport height */
+  height: 55vh;  /* change from 70vh */     /* Full viewport height */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,7 +47,7 @@ header * {
 
 h1 {
   font-family: 'Montserrat', sans-serif; /* Bold font for headings */
-  font-size: 4em;                         /* Large size for homepage title */
+  font-size: 2.5em;    /* previously 4em */                     /* Large size for homepage title */
   font-weight: 700;
   color: white;
   margin: 0;
@@ -64,8 +64,8 @@ h1 {
 --------------------------------*/
 .shop-button {
   font-family: 'Poppins', sans-serif;    /* Match body font */
-  font-size: 1.2em;                      /* Larger text for visibility */
-  padding: 15px 30px;                    /* Spacing inside the button */
+  font-size: 1em;                      /* Larger text for visibility */
+  padding: 10px 20px;                    /* Spacing inside the button */
   background-color: #ff7f50;             /* Bright Gen Z orange */
   color: white;
   border: none;
@@ -86,8 +86,8 @@ h1 {
 .product-grid {
   display: grid;                                     /* CSS grid layout for flexible columns */
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive layout */
-  gap: 30px;                                         /* Space between products */
-  padding: 40px 20px;
+  gap: 20px;         /* Less space between items */                                 /* Space between products */
+  padding: 20px 10px;  /* Less padding */
 }
 
 .product img {
