@@ -13,19 +13,37 @@ body {
    HERO SECTION (Full-screen Banner)
 --------------------------------*/
 header {
-  background-image: url('images/hero-image.jpg'); /* Background image for hero/banner */
-  background-size: cover;                         /* Stretch image to fill space */
-  background-position: center;                    /* Center the background image */
-  height: 100vh;                                   /* Full viewport height */
-  color: white;
-  text-align: center;
+  background-image: url('images/hero-banner.jpg'); /* Uses the new banner image */
+  background-size: cover;                          /* Fill the entire section */
+  background-position: center;
+  height: 100vh;                                    /* Full viewport height */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  margin: 0;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+  position: relative;
 }
+
+/* Optional: dark overlay for better text contrast */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Adjust opacity if needed */
+  z-index: 1;
+}
+
+header * {
+  position: relative;
+  z-index: 2;
+}
+
 
 h1 {
   font-family: 'Montserrat', sans-serif; /* Bold font for headings */
