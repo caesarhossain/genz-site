@@ -15,7 +15,7 @@ body {
 header {
   background-image: url('images/hero-banner.jpg'); /* Uses the new banner image */
   background-size: cover;                          /* Fill the entire section */
-   background-position: top center; /* 👈 shift focus to top */
+   background-position: top center; /* shift focus to top */
   height: 100vh;                                    /* Full viewport height */
   display: flex;
   flex-direction: column;
