@@ -16,7 +16,7 @@ header {
   background-image: url('images/hero-banner.jpg');
   background-size: cover;
   background-position: center;
-  min-height: 60vh; /* Taller than 45vh but shorter than full-screen */
+  min-height: 70vh; /* Taller than 45vh but shorter than full-screen */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -80,7 +80,8 @@ h1 {
   padding: 20px;
   max-width: 1200px;
   /* margin: auto;-->*/
-  margin-top: 20px; /* New */ 
+  margin-top: 10px; /* New */ 
+   margin-bottom: 20px;
 }
 
 .product {
@@ -184,6 +185,8 @@ footer .newsletter button:hover {
 /* ------------------------------
    RESPONSIVE FIXES
 --------------------------------*/
+
+/* For mobile and tablet */
 @media (max-width: 768px) {
   header {
     height: 35vh;
@@ -197,5 +200,14 @@ footer .newsletter button:hover {
   .product-grid {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+/* For large screens - highlight Kids Tee */
+@media (min-width: 1024px) {
+  .product-grid .product:last-child {
+    order: -1; /* Move Kids Tee visually to the side/first */
+    background-color: #fffef5;
+    border: 2px dashed #ff7f50;
   }
 }
