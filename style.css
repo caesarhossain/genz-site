@@ -34,6 +34,8 @@ header::before {
   width: 100%; height: 100%;
   background: rgba(0, 0, 0, 0.4); /* dark overlay for readability */
   z-index: 1;
+   justify-content: center;  /* centers title/button instead of aligning to bottom */
+  min-height: 60vh;         /* keep banner height clean */
 }
 
 header * {
@@ -78,10 +80,11 @@ h1 {
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  max-width: 1200px;
+  max-width: 1000px; /* Constrain width more for large screens */
   /* margin: auto;-->*/
-  margin-top: 10px; /* New */ 
-   margin-bottom: 20px;
+  /*margin-top: 10px; /* New */ 
+  /* margin-bottom: 20px; */
+   margin: 20px auto;        /* Center horizontally */
 }
 
 .product {
@@ -92,6 +95,7 @@ h1 {
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
   width: 250px;
   flex-shrink: 0;
+    max-width: 240px; /* New*/
 }
 
 .product img {
@@ -208,6 +212,6 @@ footer .newsletter button:hover {
   .product-grid .product:last-child {
     order: -1; /* Move Kids Tee visually to the side/first */
     background-color: #fffef5;
-    border: 2px dashed #ff7f50;
+    border: 1px dashed #ff7f50;
   }
 }
