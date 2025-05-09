@@ -24,15 +24,16 @@ h1 {
 }
 
 .shop-button {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.2em;
-  padding: 12px 25px;
-  background-color: #ff7f50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
+ font-family: 'Poppins', sans-serif;    /* Stylish, modern font */
+  font-size: 1.2em;                      /* Button text size */
+  padding: 12px 25px;                    /* Space inside the button */
+  background-color: #ff7f50;             /* Bold orange color */
+  color: white;                          /* Text color is white for contrast */
+  border: none;                          /* No border for a clean look */
+  border-radius: 5px;                    /* Rounded corners */
+  cursor: pointer;                       /* Pointer on hover */
+  text-decoration: none;                 /* No underline */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 .product-grid {
