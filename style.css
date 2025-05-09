@@ -16,10 +16,10 @@ header {
   background-image: url('images/hero-banner.jpg');
   background-size: cover;
   background-position: center;
-  min-height: 70vh; /* Taller than 45vh but shorter than full-screen */
+  min-height: 60vh; /* Balanced height */
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center; /* Center text vertically */
   align-items: center;
   text-align: center;
   color: white;
@@ -32,10 +32,8 @@ header::before {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* dark overlay for readability */
+  background: rgba(0, 0, 0, 0.4); /* dark overlay for contrast */
   z-index: 1;
-   justify-content: center;  /* centers title/button instead of aligning to bottom */
-  min-height: 60vh;         /* keep banner height clean */
 }
 
 header * {
@@ -46,8 +44,9 @@ header * {
 h1 {
   font-size: 3em;
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Helps it pop over busy backgrounds */
+  margin: 0;
+  padding: 10px 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .tagline {
@@ -80,11 +79,8 @@ h1 {
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  max-width: 1000px; /* Constrain width more for large screens */
-  /* margin: auto;-->*/
-  /*margin-top: 10px; /* New */ 
-  /* margin-bottom: 20px; */
-   margin: 20px auto;        /* Center horizontally */
+  max-width: 1000px;    /* Constrained for large screens */
+  margin: 20px auto;    /* Centered */
 }
 
 .product {
@@ -94,8 +90,8 @@ h1 {
   text-align: center;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
   width: 250px;
+  max-width: 240px;     /* Limit stretch on big monitors */
   flex-shrink: 0;
-    max-width: 240px; /* New*/
 }
 
 .product img {
@@ -122,7 +118,7 @@ h1 {
 }
 
 /* ------------------------------
-   FOOTER STYLING
+   FOOTER
 --------------------------------*/
 footer {
   background-color: #333;
@@ -190,7 +186,7 @@ footer .newsletter button:hover {
    RESPONSIVE FIXES
 --------------------------------*/
 
-/* For mobile and tablet */
+/* Tablet & mobile */
 @media (max-width: 768px) {
   header {
     height: 35vh;
@@ -199,6 +195,7 @@ footer .newsletter button:hover {
 
   .product {
     width: 90%;
+    max-width: none;
   }
 
   .product-grid {
@@ -207,11 +204,11 @@ footer .newsletter button:hover {
   }
 }
 
-/* For large screens - highlight Kids Tee */
+/* Large screens: float Kids Tee left for emphasis */
 @media (min-width: 1024px) {
   .product-grid .product:last-child {
-    order: -1; /* Move Kids Tee visually to the side/first */
+    order: -1;
     background-color: #fffef5;
-    border: 1px dashed #ff7f50;
+    border: 1px solid #ff7f50;
   }
 }
