@@ -15,15 +15,15 @@ body {
 header {
   background-image: url('images/hero-banner.jpg');
   background-size: cover;
-  background-position: top center;
-  height: 30vh; /* smaller height for better layout */
+  background-position: center;
+  min-height: 60vh; /* Taller than 45vh but shorter than full-screen */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   text-align: center;
   color: white;
-  padding: 10px;
+  padding: 20px;
   position: relative;
 }
 
@@ -42,9 +42,10 @@ header * {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3em;
   font-family: 'Montserrat', sans-serif;
-  margin: 0;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Helps it pop over busy backgrounds */
 }
 
 .tagline {
@@ -78,7 +79,8 @@ h1 {
   gap: 20px;
   padding: 20px;
   max-width: 1200px;
-  margin: auto;
+  /* margin: auto;-->*/
+  margin-top: 20px; /* New */ 
 }
 
 .product {
