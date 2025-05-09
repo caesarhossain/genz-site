@@ -1,32 +1,29 @@
 /* ------------------------------
-   GLOBAL STYLES (Fonts, Colors)
+   GLOBAL STYLES
 --------------------------------*/
 body {
-  font-family: 'Poppins', sans-serif; /* Clean, modern font for all body text */
-  background-color: #f8f8f8;          /* Soft gray background for a light, modern look */
-  color: #333;                        /* Dark gray text color */
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
   margin: 0;
   padding: 0;
 }
 
 /* ------------------------------
-   HERO SECTION (Full-screen Banner)
---------------------------------*/
-/* ------------------------------
-   HERO SECTION (Responsive Banner)
+   HERO SECTION
 --------------------------------*/
 header {
   background-image: url('images/hero-banner.jpg');
   background-size: cover;
-  background-position: center;
-  height: 45vh; /* Reduced height for all-screen fit */
+  background-position: top center;
+  height: 30vh; /* smaller height for better layout */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   text-align: center;
   color: white;
-  padding: 20px;
+  padding: 10px;
   position: relative;
 }
 
@@ -35,7 +32,7 @@ header::before {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Overlay for better contrast */
+  background: rgba(0, 0, 0, 0.4); /* dark overlay for readability */
   z-index: 1;
 }
 
@@ -45,18 +42,18 @@ header * {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
 
 .tagline {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #f8f8f8;
 }
 
 .shop-button {
-  font-size: 1em;
+  font-size: 0.9em;
   padding: 10px 20px;
   background-color: #ff7f50;
   border-radius: 5px;
@@ -72,88 +69,48 @@ h1 {
 }
 
 /* ------------------------------
-   PRODUCT GRID (Mobile-friendly)
+   PRODUCT GRID
 --------------------------------*/
 .product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   padding: 20px;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
 }
 
 .product {
   background: #fff;
-  padding: 10px;
+  padding: 15px;
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  width: 250px;
+  flex-shrink: 0;
 }
 
 .product img {
   width: 100%;
   height: auto;
-  border-radius: 6px;
-}
-
-.product h2, .product p {
-  font-size: 1rem;
-  margin: 10px 0 5px;
-}
-
-
-/* ------------------------------
-   BUTTON STYLES
---------------------------------*/
-.shop-button {
-  font-family: 'Poppins', sans-serif;    /* Match body font */
-  font-size: 1em;                      /* Larger text for visibility */
-  padding: 10px 20px;                    /* Spacing inside the button */
-  background-color: #ff7f50;             /* Bright Gen Z orange */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  margin-top: 10px; /* reduce spacing */
-  transition: background-color 0.3s ease; /* Smooth color transition on hover */
-}
-
-.shop-button:hover {
-  background-color: #ff5722; /* Darker orange when hovering */
-}
-
-/* ------------------------------
-   PRODUCT GRID & CARD STYLES
---------------------------------*/
-.product-grid {
-  display: grid;                                     /* CSS grid layout for flexible columns */
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive layout */
-  gap: 20px;         /* Less space between items */                                 /* Space between products */
-  padding: 20px 10px;  /* Less padding */
-}
-
-.product img {
-  width: 100%;                          /* Responsive images */
-  height: auto;
-  border-radius: 10px;                 /* Rounded corners for soft look */
-  transition: transform 0.3s ease;     /* Animation for hover zoom */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
 .product img:hover {
-  transform: scale(1.1);               /* Zoom-in on hover */
+  transform: scale(1.05);
 }
 
 .product h2 {
-  font-size: 1.5em;                    /* Bold product title */
+  font-size: 1.2em;
   margin-top: 10px;
   color: #333;
 }
 
 .product p {
-  color: #ff7f50;                      /* Orange pricing */
-  font-size: 1.1em;
+  color: #ff7f50;
+  font-size: 1em;
   margin-top: 5px;
 }
 
@@ -161,32 +118,30 @@ h1 {
    FOOTER STYLING
 --------------------------------*/
 footer {
-  background-color: #333;             /* Dark background for footer */
+  background-color: #333;
   color: white;
-  padding: 40px 20px;
+  padding: 30px 20px;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
-/* Social Media Icons in Footer */
 footer .social-icons a {
-  margin: 0 15px;
+  margin: 0 10px;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.3em;
   transition: color 0.3s ease;
 }
 
 footer .social-icons a:hover {
-  color: #ff7f50;                     /* Orange on hover */
+  color: #ff7f50;
 }
 
-/* Newsletter Form in Footer */
 footer .newsletter input {
   padding: 10px;
   margin-right: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  width: 200px;
+  width: 180px;
 }
 
 footer .newsletter button {
@@ -208,7 +163,7 @@ footer .newsletter button:hover {
 --------------------------------*/
 .instagram-feed {
   text-align: center;
-  padding: 40px 20px;
+  padding: 30px 20px;
 }
 
 .instagram-images {
@@ -218,8 +173,27 @@ footer .newsletter button:hover {
 }
 
 .instagram-images img {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   border-radius: 10px;
   object-fit: cover;
+}
+
+/* ------------------------------
+   RESPONSIVE FIXES
+--------------------------------*/
+@media (max-width: 768px) {
+  header {
+    height: 35vh;
+    padding: 10px;
+  }
+
+  .product {
+    width: 90%;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 }
