@@ -12,30 +12,30 @@ body {
 /* ------------------------------
    HERO SECTION (Full-screen Banner)
 --------------------------------*/
+/* ------------------------------
+   HERO SECTION (Responsive Banner)
+--------------------------------*/
 header {
-  background-image: url('images/hero-banner.jpg'); /* Uses the new banner image */
-  background-size: cover;                          /* Fill the entire section */
-   background-position: top center; /* shift focus to top */
-  height: 55vh;  /* change from 70vh */     /* Full viewport height */
+  background-image: url('images/hero-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 45vh; /* Reduced height for all-screen fit */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
-  padding: 0 20px;
+  padding: 20px;
   position: relative;
 }
 
-/* Optional: dark overlay for better text contrast */
 header::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Adjust opacity if needed */
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Overlay for better contrast */
   z-index: 1;
 }
 
@@ -44,20 +44,64 @@ header * {
   z-index: 2;
 }
 
-
 h1 {
-  font-family: 'Montserrat', sans-serif; /* Bold font for headings */
-  font-size: 2.5em;    /* previously 4em */                     /* Large size for homepage title */
-  font-weight: 700;
-  color: white;
+  font-size: 2.5em;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
 
 .tagline {
-  font-size: 1.2rem;       /* Slightly larger text for tagline */
-  color: #f8f8f8;          /* Light gray text color */
-  margin-top: 10px;
+  font-size: 1rem;
+  color: #f8f8f8;
 }
+
+.shop-button {
+  font-size: 1em;
+  padding: 10px 20px;
+  background-color: #ff7f50;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shop-button:hover {
+  background-color: #ff5722;
+}
+
+/* ------------------------------
+   PRODUCT GRID (Mobile-friendly)
+--------------------------------*/
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.product {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.product h2, .product p {
+  font-size: 1rem;
+  margin: 10px 0 5px;
+}
+
 
 /* ------------------------------
    BUTTON STYLES
