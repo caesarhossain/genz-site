@@ -1,58 +1,163 @@
+/* ------------------------------
+   GLOBAL STYLES (Fonts, Colors)
+--------------------------------*/
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f8f8f8;  /* Soft, clean background */
-  color: #333;                /* Dark gray text for contrast */
+  font-family: 'Poppins', sans-serif; /* Clean, modern font for all body text */
+  background-color: #f8f8f8;          /* Soft gray background for a light, modern look */
+  color: #333;                        /* Dark gray text color */
   margin: 0;
   padding: 0;
 }
 
+/* ------------------------------
+   HERO SECTION (Full-screen Banner)
+--------------------------------*/
 header {
-  background-color: #f7f7f7;
-  padding: 50px 20px;
+  background-image: url('images/hero-image.jpg'); /* Background image for hero/banner */
+  background-size: cover;                         /* Stretch image to fill space */
+  background-position: center;                    /* Center the background image */
+  height: 100vh;                                   /* Full viewport height */
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
-  color: #333;
-  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif; /* Bold font for headings */
+  font-size: 4em;                         /* Large size for homepage title */
+  font-weight: 700;
+  color: white;
+  margin: 0;
 }
 
 .tagline {
-  font-size: 1.2rem;
+  font-size: 1.2rem;       /* Slightly larger text for tagline */
+  color: #f8f8f8;          /* Light gray text color */
   margin-top: 10px;
-  color: #555;
 }
 
+/* ------------------------------
+   BUTTON STYLES
+--------------------------------*/
 .shop-button {
- font-family: 'Poppins', sans-serif;    /* Stylish, modern font */
-  font-size: 1.2em;                      /* Button text size */
-  padding: 12px 25px;                    /* Space inside the button */
-  background-color: #ff7f50;             /* Bold orange color */
-  color: white;                          /* Text color is white for contrast */
-  border: none;                          /* No border for a clean look */
-  border-radius: 5px;                    /* Rounded corners */
-  cursor: pointer;                       /* Pointer on hover */
-  text-decoration: none;                 /* No underline */
-  transition: background-color 0.3s ease; /* Smooth hover effect */
+  font-family: 'Poppins', sans-serif;    /* Match body font */
+  font-size: 1.2em;                      /* Larger text for visibility */
+  padding: 15px 30px;                    /* Spacing inside the button */
+  background-color: #ff7f50;             /* Bright Gen Z orange */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease; /* Smooth color transition on hover */
 }
 
+.shop-button:hover {
+  background-color: #ff5722; /* Darker orange when hovering */
+}
+
+/* ------------------------------
+   PRODUCT GRID & CARD STYLES
+--------------------------------*/
 .product-grid {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  display: grid;                                     /* CSS grid layout for flexible columns */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive layout */
+  gap: 30px;                                         /* Space between products */
   padding: 40px 20px;
 }
 
 .product img {
-  width: 200px;
+  width: 100%;                          /* Responsive images */
   height: auto;
-  border-radius: 6px;
+  border-radius: 10px;                 /* Rounded corners for soft look */
+  transition: transform 0.3s ease;     /* Animation for hover zoom */
 }
 
-footer {
-  background-color: #f2f2f2;
-  padding: 20px;
-  font-size: 0.9rem;
+.product img:hover {
+  transform: scale(1.1);               /* Zoom-in on hover */
+}
+
+.product h2 {
+  font-size: 1.5em;                    /* Bold product title */
+  margin-top: 10px;
   color: #333;
+}
+
+.product p {
+  color: #ff7f50;                      /* Orange pricing */
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+
+/* ------------------------------
+   FOOTER STYLING
+--------------------------------*/
+footer {
+  background-color: #333;             /* Dark background for footer */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Social Media Icons in Footer */
+footer .social-icons a {
+  margin: 0 15px;
+  color: white;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #ff7f50;                     /* Orange on hover */
+}
+
+/* Newsletter Form in Footer */
+footer .newsletter input {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+footer .newsletter button {
+  padding: 10px;
+  background-color: #ff7f50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+footer .newsletter button:hover {
+  background-color: #ff5722;
+}
+
+/* ------------------------------
+   INSTAGRAM SECTION (OPTIONAL)
+--------------------------------*/
+.instagram-feed {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.instagram-images {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.instagram-images img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
 }
