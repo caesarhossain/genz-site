@@ -120,4 +120,11 @@ footer {
   header {
     padding-top: 30px;
   }
+  .main-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5em;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
 }
