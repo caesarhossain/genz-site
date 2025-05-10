@@ -8,7 +8,12 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
+  min-height: 100vh;         /* This ensures the background stretches full screen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 /* ------------------------------
    HERO SECTION
