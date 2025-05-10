@@ -75,10 +75,11 @@ header {
 
 
 .product img {
-  width: 100%;
+  width: 90%;         /* Shrinks the image */
   height: auto;
+  margin: 0 auto;     /* Centers the image */
+  display: block;
   border-radius: 8px;
-  margin-bottom: 15px;
   transition: transform 0.3s ease;
 }
 
