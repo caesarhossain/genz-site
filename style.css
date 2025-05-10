@@ -9,7 +9,15 @@ body {
 
 header {
   text-align: center;
-  padding: 40px 20px 10px;
+  padding: 40px 20px 20px;
+}
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
 }
 
 .tagline {
@@ -48,14 +56,14 @@ header {
 }
 
 .product {
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   width: 260px;
   text-align: center;
   color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 25px rgba(0,0,0,0.25);
 }
 
 .product img {
@@ -75,9 +83,10 @@ header {
 }
 
 .product p {
-  font-size: 0.9em;
-  margin: 10px 0;
-  color: #f8d1c0;
+  font-size: 1.3em; /* Make h2 titles stand out more:*/
+  font-weight: 600;
+  color: #ffffff;
+  margin: 12px 0 8px;
 }
 
 .product ul {
@@ -89,7 +98,9 @@ header {
 }
 
 .product ul li {
-  margin: 4px 0;
+  margin-bottom: 6px;
+  font-size: 0.9em;
+  color: #e0e0e0;
 }
 
 footer {
@@ -99,13 +110,14 @@ footer {
   font-size: 0.85rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .product-grid {
-    flex-direction: column;
-    align-items: center;
+    padding: 10px;
   }
-
   .product {
-    width: 90%;
+    width: 95%;
+  }
+  header {
+    padding-top: 30px;
   }
 }
