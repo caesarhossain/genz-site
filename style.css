@@ -3,49 +3,42 @@
 --------------------------------*/
 body {
   font-family: 'Poppins', sans-serif;
-  background: url('images/hero-banner.jpg') no-repeat center center fixed;
+  background: url('images/mountain-stars.jpg') no-repeat center center fixed;
   background-size: cover;
   margin: 0;
   padding: 0;
-  color: #333;
-  min-height: 100vh;         /* This ensures the background stretches full screen */
+  color: #fff;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
 /* ------------------------------
    HERO SECTION
 --------------------------------*/
 header {
-  background: transparent;
   padding: 20px;
   text-align: center;
 }
 
-h1 {
-  font-size: 2.5em;
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
 .tagline {
-  font-size: 0.95rem;
-  color: #f8f8f8;
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .shop-button {
-  font-size: 0.9em;
+  font-size: 1em;
   padding: 10px 20px;
   background-color: #ff7f50;
   border-radius: 5px;
-  margin-top: 10px;
+  margin-bottom: 10px;
   border: none;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .shop-button:hover {
@@ -60,28 +53,27 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 10px 20px;
-  max-width: 1200px;
+  padding: 20px;
+  max-width: 1300px;
+  width: 100%;
   margin: 0 auto;
-  min-height: 80vh;
 }
 
 .product {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(8px);
-  padding: 15px;
-  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 20px;
+  border-radius: 10px;
   text-align: center;
-  width: 250px;
-  flex-shrink: 0;
-  color: white;
-  border: 1px solid rgba(255,255,255,0.2);
+  width: 260px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .product img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
@@ -92,109 +84,60 @@ h1 {
 .product h2 {
   font-size: 1.2em;
   margin-top: 10px;
-  color: white;
+  color: #fff;
 }
 
 .product p {
-  color: #ffccbb;
-  font-size: 1em;
-  margin-top: 5px;
+  color: #ffe0d5;
+  font-size: 0.95em;
+}
+
+.product ul {
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+  font-size: 0.9em;
+  color: #eee;
+}
+
+.product ul li {
+  margin-bottom: 6px;
 }
 
 /* ------------------------------
-   FOOTER STYLING
+   FOOTER
 --------------------------------*/
 footer {
-  background-color: transparent;
-  color: white;
-  padding: 30px 20px;
+  margin-top: auto;
+  padding: 20px;
   text-align: center;
   font-size: 0.9rem;
-}
-
-footer .social-icons a {
-  margin: 0 10px;
   color: white;
-  font-size: 1.3em;
-  transition: color 0.3s ease;
-}
-
-footer .social-icons a:hover {
-  color: #ff7f50;
-}
-
-footer .newsletter input {
-  padding: 10px;
-  margin-right: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  width: 180px;
-}
-
-footer .newsletter button {
-  padding: 10px;
-  background-color: #ff7f50;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-footer .newsletter button:hover {
-  background-color: #ff5722;
 }
 
 /* ------------------------------
-   INSTAGRAM SECTION (OPTIONAL)
---------------------------------*/
-.instagram-feed {
-  text-align: center;
-  padding: 30px 20px;
-}
-
-.instagram-images {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.instagram-images img {
-  width: 130px;
-  height: 130px;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-/* ------------------------------
-   RESPONSIVE FIXES
+   RESPONSIVE
 --------------------------------*/
 @media (max-width: 768px) {
-  header {
-    padding: 10px;
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
   }
   .product {
     width: 90%;
   }
-  .product-grid {
-    flex-direction: column;
-    align-items: center;
+  .tagline {
+    font-size: 0.9rem;
+  }
+  .shop-button {
+    font-size: 0.9em;
+    padding: 8px 16px;
   }
 }
 
 @media (min-width: 1024px) {
   .product-grid .product:last-child {
     order: -1;
-    background-color: rgba(255, 255, 255, 0.1);
     border: 2px dashed #ff7f50;
   }
-   .main-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 100vh;
-  width: 100%;
-}
-
 }
