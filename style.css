@@ -1,79 +1,68 @@
-/* ------------------------------
-   GLOBAL STYLES
---------------------------------*/
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Poppins', sans-serif;
   background: url('images/mountain-stars.jpg') no-repeat center center fixed;
   background-size: cover;
-  margin: 0;
-  padding: 0;
   color: #fff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-/* ------------------------------
-   HERO SECTION
---------------------------------*/
 header {
-  padding: 20px;
   text-align: center;
+  padding: 40px 20px 10px;
 }
 
 .tagline {
-  font-size: 1rem;
-  color: #ffffff;
+  font-size: 1.1rem;
   margin-bottom: 10px;
 }
 
 .shop-button {
-  font-size: 1em;
   padding: 10px 20px;
-  background-color: #ff7f50;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  border: none;
+  font-size: 1rem;
+  background: #ff7f50;
   color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  border: none;
+  border-radius: 6px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .shop-button:hover {
-  background-color: #ff5722;
+  background: #ff5722;
 }
 
-/* ------------------------------
-   PRODUCT GRID
---------------------------------*/
+.main-content {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+}
+
 .product-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  gap: 30px;
   max-width: 1300px;
   width: 100%;
-  margin: 0 auto;
 }
 
 .product {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
   padding: 20px;
   border-radius: 10px;
-  text-align: center;
   width: 260px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .product img {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  margin-bottom: 15px;
   transition: transform 0.3s ease;
 }
 
@@ -82,62 +71,41 @@ header {
 }
 
 .product h2 {
-  font-size: 1.2em;
-  margin-top: 10px;
-  color: #fff;
+  margin-bottom: 10px;
 }
 
 .product p {
-  color: #ffe0d5;
-  font-size: 0.95em;
+  font-size: 0.9em;
+  margin: 10px 0;
+  color: #f8d1c0;
 }
 
 .product ul {
   padding: 0;
   list-style-type: none;
-  text-align: left;
-  font-size: 0.9em;
   color: #eee;
+  font-size: 0.85em;
+  text-align: left;
 }
 
 .product ul li {
-  margin-bottom: 6px;
+  margin: 4px 0;
 }
 
-/* ------------------------------
-   FOOTER
---------------------------------*/
 footer {
-  margin-top: auto;
-  padding: 20px;
   text-align: center;
-  font-size: 0.9rem;
-  color: white;
+  color: #fff;
+  padding: 20px;
+  font-size: 0.85rem;
 }
 
-/* ------------------------------
-   RESPONSIVE
---------------------------------*/
 @media (max-width: 768px) {
   .product-grid {
     flex-direction: column;
     align-items: center;
   }
+
   .product {
     width: 90%;
-  }
-  .tagline {
-    font-size: 0.9rem;
-  }
-  .shop-button {
-    font-size: 0.9em;
-    padding: 8px 16px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .product-grid .product:last-child {
-    order: -1;
-    border: 2px dashed #ff7f50;
   }
 }
