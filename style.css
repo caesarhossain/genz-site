@@ -1,214 +1,205 @@
 /* ------------------------------
-   GLOBAL STYLES
+GLOBAL STYLES
 --------------------------------*/
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f8f8f8;
-  color: #333;
-  margin: 0;
-  padding: 0;
+font-family: 'Poppins', sans-serif;
+background: url('images/mountain-stars.jpg') no-repeat center center fixed;
+background-size: cover;
+color: #333;
+margin: 0;
+padding: 0;
 }
 
 /* ------------------------------
-   HERO SECTION
+HERO SECTION
 --------------------------------*/
 header {
-  background-image: url('images/hero-banner.jpg');
-  background-size: cover;
-  background-position: center;
-  min-height: 60vh; /* Balanced height */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center text vertically */
-  align-items: center;
-  text-align: center;
-  color: white;
-  padding: 20px;
-  position: relative;
+background: transparent;
+min-height: 10vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: white;
+padding: 10px;
+position: relative;
 }
 
 header::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* dark overlay for contrast */
-  z-index: 1;
+display: none;
 }
 
 header * {
-  position: relative;
-  z-index: 2;
+position: relative;
+z-index: 2;
 }
 
 h1 {
-  font-size: 3em;
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 10px 0;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+font-size: 2.5em;
+font-family: 'Montserrat', sans-serif;
+margin-bottom: 10px;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .tagline {
-  font-size: 0.95rem;
-  color: #f8f8f8;
+font-size: 0.95rem;
+color: #f8f8f8;
 }
 
 .shop-button {
-  font-size: 0.9em;
-  padding: 10px 20px;
-  background-color: #ff7f50;
-  border-radius: 5px;
-  margin-top: 10px;
-  border: none;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+font-size: 0.9em;
+padding: 10px 20px;
+background-color: #ff7f50;
+border-radius: 5px;
+margin-top: 10px;
+border: none;
+color: white;
+cursor: pointer;
+transition: background-color 0.3s ease;
 }
 
 .shop-button:hover {
-  background-color: #ff5722;
+background-color: #ff5722;
 }
 
 /* ------------------------------
-   PRODUCT GRID
+PRODUCT GRID
 --------------------------------*/
 .product-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  max-width: 1000px;    /* Constrained for large screens */
-  margin: 20px auto;    /* Centered */
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+padding: 10px;
+max-width: 1200px;
+margin: auto;
+max-height: 85vh;
+overflow-y: auto;
 }
 
 .product {
-  background: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  width: 250px;
-  max-width: 240px;     /* Limit stretch on big monitors */
-  flex-shrink: 0;
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(6px);
+padding: 15px;
+border-radius: 8px;
+text-align: center;
+width: 250px;
+flex-shrink: 0;
+color: white;
+border: 1px solid rgba(255,255,255,0.2);
 }
 
 .product img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+width: 100%;
+height: auto;
+border-radius: 10px;
+transition: transform 0.3s ease;
 }
 
 .product img:hover {
-  transform: scale(1.05);
+transform: scale(1.05);
 }
 
 .product h2 {
-  font-size: 1.2em;
-  margin-top: 10px;
-  color: #333;
+font-size: 1.2em;
+margin-top: 10px;
+color: white;
 }
 
 .product p {
-  color: #ff7f50;
-  font-size: 1em;
-  margin-top: 5px;
+color: #ffccbb;
+font-size: 1em;
+margin-top: 5px;
 }
 
 /* ------------------------------
-   FOOTER
+FOOTER STYLING
 --------------------------------*/
 footer {
-  background-color: #333;
-  color: white;
-  padding: 30px 20px;
-  text-align: center;
-  font-size: 0.9rem;
+background-color: transparent;
+color: white;
+padding: 30px 20px;
+text-align: center;
+font-size: 0.9rem;
 }
 
 footer .social-icons a {
-  margin: 0 10px;
-  color: white;
-  font-size: 1.3em;
-  transition: color 0.3s ease;
+margin: 0 10px;
+color: white;
+font-size: 1.3em;
+transition: color 0.3s ease;
 }
 
 footer .social-icons a:hover {
-  color: #ff7f50;
+color: #ff7f50;
 }
 
 footer .newsletter input {
-  padding: 10px;
-  margin-right: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  width: 180px;
+padding: 10px;
+margin-right: 10px;
+border-radius: 5px;
+border: 1px solid #ccc;
+width: 180px;
 }
 
 footer .newsletter button {
-  padding: 10px;
-  background-color: #ff7f50;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+padding: 10px;
+background-color: #ff7f50;
+border: none;
+border-radius: 5px;
+color: white;
+cursor: pointer;
+transition: background-color 0.3s ease;
 }
 
 footer .newsletter button:hover {
-  background-color: #ff5722;
+background-color: #ff5722;
 }
 
 /* ------------------------------
-   INSTAGRAM SECTION (OPTIONAL)
+INSTAGRAM SECTION (OPTIONAL)
 --------------------------------*/
 .instagram-feed {
-  text-align: center;
-  padding: 30px 20px;
+text-align: center;
+padding: 30px 20px;
 }
 
 .instagram-images {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+display: flex;
+justify-content: center;
+gap: 15px;
 }
 
 .instagram-images img {
-  width: 130px;
-  height: 130px;
-  border-radius: 10px;
-  object-fit: cover;
+width: 130px;
+height: 130px;
+border-radius: 10px;
+object-fit: cover;
 }
 
 /* ------------------------------
-   RESPONSIVE FIXES
+RESPONSIVE FIXES
 --------------------------------*/
-
-/* Tablet & mobile */
 @media (max-width: 768px) {
-  header {
-    height: 35vh;
-    padding: 10px;
-  }
-
-  .product {
-    width: 90%;
-    max-width: none;
-  }
-
-  .product-grid {
-    flex-direction: column;
-    align-items: center;
-  }
+header {
+min-height: 25vh;
+padding: 10px;
+}
+.product {
+width: 90%;
+}
+.product-grid {
+flex-direction: column;
+align-items: center;
+}
 }
 
-/* Large screens: float Kids Tee left for emphasis */
 @media (min-width: 1024px) {
-  .product-grid .product:last-child {
-    order: -1;
-    background-color: #fffef5;
-    border: 1px solid #ff7f50;
-  }
+.product-grid .product:last-child {
+order: -1;
+background-color: rgba(255, 255, 255, 0.1);
+border: 2px dashed #ff7f50;
 }
+}
+
