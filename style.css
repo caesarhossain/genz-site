@@ -87,13 +87,16 @@ header {
 }
 
 .product h2 {
-  margin-bottom: 10px;
+  font-size: 1.4rem;
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 600;
 }
 
 .product p {
-  font-size: 1.3em; /* Make h2 titles stand out more:*/
+  font-size: 1em; /* Make h2 titles stand out more:*/
   font-weight: 600;
-  color: #ffffff;
+  color: #ffe0d5;
   margin: 12px 0 8px;
 }
 
@@ -101,7 +104,7 @@ header {
   padding: 0;
   list-style-type: none;
   color: #eee;
-  font-size: 0.85em;
+  font-size: 1em;
   text-align: left;
 }
 
