@@ -1,172 +1,58 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
-            url('images/mountain-stars.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generation Z - Memorial Day</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-header {
-  text-align: center;
-  padding: 40px 20px 20px;
-}
+  <div class="promo-popup" id="promoPopup">
+    🎉 Memorial Day Sale: 10% Off All Tees — This Week Only!
+    <button onclick="document.getElementById('promoPopup').style.display='none'">✖</button>
+  </div>
 
-.hero-text {
-  background: rgba(0, 0, 0, 0.4);
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 8px;
-  backdrop-filter: blur(6px);
-}
+  <header>
+    <h1 class="main-title">GENERATION Z</h1>
+    <div class="memorial-banner">Free Shipping • Memorial Day Special 🇺🇸</div>
+  </header>
 
-.tagline {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
+  <main class="product-grid">
+    <div class="product kids">
+      <img src="images/kids-flag-tee-model.jpg" alt="Kids Flag Tee">
+      <h2>Kids Flag Tee – $20</h2>
+      <p>Perfect for July 4th, parades, or family photos.</p>
+      <a href="#" class="shop-button-product">Shop Kids Tee</a>
+    </div>
 
-.shop-button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background: #ff7f50;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;
-  cursor: pointer;
-}
+    <div class="product">
+      <img src="images/flag-tee-1-model.jpg" alt="Flag Tee 1">
+      <h2>Flag Tee 1 – $25</h2>
+      <p>Bold patriotic style for summer events.</p>
+      <a href="#" class="shop-button-product">Shop Now</a>
+    </div>
 
-.shop-button:hover {
-  background: #ff5722;
-}
+    <div class="product">
+      <img src="images/flag-tee-2-model.jpg" alt="Flag Tee 2">
+      <h2>Flag Tee 2 – $25</h2>
+      <p>Classic design with premium cotton comfort.</p>
+      <a href="#" class="shop-button-product">Shop Now</a>
+    </div>
 
-.main-content {
-  padding: 30px 20px 60px; /* Added bottom space */
-  display: flex;
-  justify-content: center;
-}
+    <div class="product">
+      <img src="images/flag-tee-3-model.jpg" alt="Flag Tee 3">
+      <h2>Flag Tee 3 – $25</h2>
+      <p>Modern flag print perfect for Memorial Day.</p>
+      <a href="#" class="shop-button-product">Shop Now</a>
+    </div>
+  </main>
 
-.product-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  max-width: 1300px;
-  width: 100%;
-}
+  <a href="#products" class="sticky-cta">🛒 Shop Memorial Day Tees</a>
 
-/* --- UPDATED PRODUCT CARD STYLING --- */
-.product {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s ease forwards;
+  <footer>
+    <p>Follow us @genzbrand | generationzllp@gmail.com</p>
+  </footer>
 
-  background: rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(8px);
-  padding: 25px 20px;
-  border-radius: 12px;
-  text-align: center;
-  width: 260px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-}
-
-.product:nth-child(2) { animation-delay: 0.1s; }
-.product:nth-child(3) { animation-delay: 0.2s; }
-.product:nth-child(4) { animation-delay: 0.3s; }
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.product img {
-  width: 90%;         /* Shrinks the image */
-  height: auto;
-  margin: 0 auto;     /* Centers the image */
-  display: block;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.product img:hover {
-  transform: scale(1.05);
-}
-
-.product h2 {
-  font-size: 1.4rem;
-  margin-top: 10px;
-  color: #fff;
-  font-weight: 600;
-}
-
-.product p {
-  font-size: 1em; /* Make h2 titles stand out more:*/
-  font-weight: 600;
-  color: #ffe0d5;
-  margin: 12px 0 8px;
-}
-
-.product ul {
-  padding: 0;
-  list-style-type: none;
-  color: #fff; /* Brighter white for better contrast */
-  font-size: 2.1em;
-  line-height: 1.6;
-  text-align: left;
-}
-
-.product ul li {
-  margin-bottom: 8px;
-  font-weight: 400;
-  font-size: 0.9em;
-  color: #e0e0e0;
-}
-
-footer {
-  text-align: center;
-  color: #fff;
-  padding: 20px;
-  font-size: 0.85rem;
-}
-
-@media (max-width: 600px) {
-  .product-grid {
-    padding: 10px;
-  }
-  .product {
-    width: 95%;
-  }
-  header {
-    padding-top: 30px;
-  }
-}
-
-.main-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 5rem;
-  color: #ffffff;
-  text-align: center;
-  margin: 0 0 10px 0;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
-}
-
-@media (max-width: 768px) {
-  .main-title {
-    font-size: 2.5rem;
-  }
-  .product:hover {
-    transform: scale(1.03);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-  }
-}
+</body>
+</html>
