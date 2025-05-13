@@ -1,172 +1,100 @@
+/* CSS - Save this in style.css */
+
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
-            url('images/mountain-stars.jpg') no-repeat center center fixed;
+              url('images/mountain-stars.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
 }
 
-header {
+header, footer {
   text-align: center;
-  padding: 40px 20px 20px;
+  padding: 20px;
 }
 
-.hero-text {
-  background: rgba(0, 0, 0, 0.4);
-  display: inline-block;
-  padding: 12px 24px;
+.main-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.memorial-banner {
+  background: #e60000;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.promo-popup {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff4444;
+  padding: 15px 20px;
   border-radius: 8px;
-  backdrop-filter: blur(6px);
-}
-
-.tagline {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-.shop-button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background: #ff7f50;
   color: white;
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.shop-button:hover {
-  background: #ff5722;
-}
-
-.main-content {
-  padding: 30px 20px 60px; /* Added bottom space */
+  z-index: 9999;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.promo-popup button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .product-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
-  max-width: 1300px;
-  width: 100%;
-}
-
-/* --- UPDATED PRODUCT CARD STYLING --- */
 .product {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s ease forwards;
-
-  background: rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(8px);
-  padding: 25px 20px;
-  border-radius: 12px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
   text-align: center;
-  width: 260px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-}
-
-.product:nth-child(2) { animation-delay: 0.1s; }
-.product:nth-child(3) { animation-delay: 0.2s; }
-.product:nth-child(4) { animation-delay: 0.3s; }
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .product img {
-  width: 90%;         /* Shrinks the image */
-  height: auto;
-  margin: 0 auto;     /* Centers the image */
-  display: block;
+  width: 100%;
   border-radius: 8px;
-  transition: transform 0.3s ease;
 }
 
-.product img:hover {
-  transform: scale(1.05);
-}
-
-.product h2 {
-  font-size: 1.4rem;
+.shop-button-product {
+  display: inline-block;
   margin-top: 10px;
-  color: #fff;
-  font-weight: 600;
+  padding: 10px 20px;
+  background: #ff7f50;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
-.product p {
-  font-size: 1em; /* Make h2 titles stand out more:*/
-  font-weight: 600;
-  color: #ffe0d5;
-  margin: 12px 0 8px;
+.kids {
+  background: rgba(173, 216, 230, 0.3);
 }
 
-.product ul {
-  padding: 0;
-  list-style-type: none;
-  color: #fff; /* Brighter white for better contrast */
-  font-size: 2.1em;
-  line-height: 1.6;
-  text-align: left;
-}
-
-.product ul li {
-  margin-bottom: 8px;
-  font-weight: 400;
-  font-size: 0.9em;
-  color: #e0e0e0;
-}
-
-footer {
-  text-align: center;
-  color: #fff;
-  padding: 20px;
-  font-size: 0.85rem;
-}
-
-@media (max-width: 600px) {
-  .product-grid {
-    padding: 10px;
-  }
-  .product {
-    width: 95%;
-  }
-  header {
-    padding-top: 30px;
-  }
-}
-
-.main-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 5rem;
-  color: #ffffff;
-  text-align: center;
-  margin: 0 0 10px 0;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+.sticky-cta {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff5722;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 9999;
 }
 
 @media (max-width: 768px) {
-  .main-title {
-    font-size: 2.5rem;
-  }
-  .product:hover {
-    transform: scale(1.03);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-  }
+  .main-title { font-size: 2.5rem; }
+  .product { width: 90%; }
 }
