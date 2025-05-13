@@ -1,49 +1,42 @@
-/* CSS - Save this in style.css */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
-            url('images/mountain-stars.jpg') no-repeat center center fixed;
+              url('images/mountain-stars.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
 }
 
-header {
+/* Banner */
+.promo-banner {
+  background: #ff0000;
+  color: #fff;
   text-align: center;
-  padding: 40px 20px 20px;
+  padding: 8px 0;
+  font-weight: bold;
+  font-size: 0.95rem;
 }
 
-.hero-text {
-  background: rgba(0, 0, 0, 0.4);
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 8px;
-  backdrop-filter: blur(6px);
+/* Header */
+.hero {
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+.main-title {
+  font-size: 4.5rem;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.6);
 }
 
 .tagline {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  margin-top: 8px;
 }
 
-.shop-button {
-  padding: 12px 24px;
-  font-size: 1.1rem;
-  background: #ff7f50;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.shop-button:hover {
-  background: #ff5722;
-}
-
+/* Main Grid */
 .main-content {
-  padding: 40px 20px 80px;
+  padding: 20px;
   display: flex;
   justify-content: center;
 }
@@ -52,125 +45,77 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
   max-width: 1400px;
   width: 100%;
 }
 
-/* --- Product Card Styling Updated --- */
+/* Product Cards */
 .product {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s ease forwards;
-
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
-  padding: 30px 25px;
-  border-radius: 16px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
   text-align: center;
-  width: 320px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
 }
 
-.product:nth-child(2) { animation-delay: 0.1s; }
-.product:nth-child(3) { animation-delay: 0.2s; }
-.product:nth-child(4) { animation-delay: 0.3s; }
-.product:nth-child(5) { animation-delay: 0.4s; }
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* --- Product Images Enhanced for Models --- */
-.product img {
+.product-img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
   border-radius: 10px;
+  margin-bottom: 12px;
   transition: transform 0.3s ease;
 }
 
-.product img:hover {
+.product-img:hover {
   transform: scale(1.05);
 }
 
 .product h2 {
   font-size: 1.5rem;
-  margin-top: 15px;
-  color: #fff;
+  margin: 10px 0 6px;
   font-weight: 600;
 }
 
 .product p {
-  font-size: 1em;
-  font-weight: 600;
-  color: #ffe0d5;
-  margin: 12px 0 10px;
-}
-
-.product ul {
-  padding: 0;
-  list-style-type: none;
-  color: #fff;
-  font-size: 1em;
-  line-height: 1.6;
-  text-align: left;
-}
-
-.product ul li {
-  margin-bottom: 10px;
-  font-weight: 400;
-  font-size: 0.95em;
+  font-size: 0.95rem;
   color: #e0e0e0;
+  margin: 0 0 12px;
 }
 
+/* Shop Button */
+.shop-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff7f50;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.shop-button:hover {
+  background: #ff5722;
+}
+
+/* Footer */
 footer {
   text-align: center;
   color: #fff;
   padding: 20px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
-/* Responsive Tweaks */
-@media (max-width: 900px) {
-  .product {
-    width: 90%;
-  }
-}
-
-@media (max-width: 600px) {
-  .product-grid {
-    padding: 10px;
-  }
-  .product {
-    width: 95%;
-  }
-  header {
-    padding-top: 30px;
-  }
-}
-
-.main-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 5rem;
-  color: #ffffff;
-  text-align: center;
-  margin: 0 0 10px 0;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
-}
-
+/* Responsive */
 @media (max-width: 768px) {
-  .main-title {
-    font-size: 3rem;
-  }
+  .main-title { font-size: 2.8rem; }
+  .product { width: 90%; }
 }
