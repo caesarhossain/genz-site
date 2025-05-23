@@ -5,6 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Generation Z</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .sticky-cta {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: #ff7f50;
+      color: white;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    .sticky-cta:hover {
+      background: #ff5722;
+    }
+  </style>
 </head>
 <body>
 
@@ -20,17 +38,18 @@
 <main class="main-content">
   <section id="products" class="product-grid">
 
-    <!-- Kids Flag Tee (no model images for now) -->
+    <!-- Kids Flag Tee -->
     <div class="product">
-      <img src="images/flag-tee-kids.jpg" alt="Kids Flag Tee" />
+      <img src="images/flag-tee-kids.jpg" alt="Kids Flag Tee" class="product-img" />
       <h2>Kids Flag Tee – $20</h2>
       <p>Perfect for July 4th, parades, or family photos...</p>
+      <img src="images/products/flag-tee-kids-model.jpg" alt="Model wearing Kids Flag Tee" class="model-image" />
       <a href="#" class="shop-button">Shop Kids Tee</a>
     </div>
 
     <!-- Flag Tee 1 -->
     <div class="product">
-      <img src="images/flag-tee-1.jpg" alt="Flag Tee 1" />
+      <img src="images/flag-tee-1.jpg" alt="Flag Tee 1" class="product-img" />
       <h2>Flag Tee 1 – $25</h2>
       <p>Bold patriotic style for summer events.</p>
       <div class="model-group">
@@ -42,7 +61,7 @@
 
     <!-- Flag Tee 2 -->
     <div class="product">
-      <img src="images/flag-tee-2.jpg" alt="Flag Tee 2" />
+      <img src="images/flag-tee-2.jpg" alt="Flag Tee 2" class="product-img" />
       <h2>Flag Tee 2 – $25</h2>
       <p>Classic design with premium cotton comfort.</p>
       <div class="model-group">
@@ -54,14 +73,19 @@
 
     <!-- Flag Tee 3 -->
     <div class="product">
-      <img src="images/flag-tee-3.jpg" alt="Flag Tee 3" />
+      <img src="images/flag-tee-3.jpg" alt="Flag Tee 3" class="product-img" />
       <h2>Flag Tee 3 – $25</h2>
       <p>Modern flag print perfect for Memorial Day.</p>
+      <img src="images/products/flag-tee-3-back.jpg" alt="Back view Flag Tee 3" class="model-image" />
+      <img src="images/products/flag-tee-3-closeup.jpg" alt="Zoomed in design Flag Tee 3" class="model-image" />
       <a href="#" class="shop-button">Shop Now</a>
     </div>
 
   </section>
 </main>
+
+<!-- Sticky CTA -->
+<a href="#products" class="sticky-cta">Shop the Drop →</a>
 
 <footer>
   <p>Follow us @genzbrand | generationzllp@gmail.com</p>
