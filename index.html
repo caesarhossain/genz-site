@@ -3,23 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Generation Z</title>
+  <title>Generation Z – Patriotic Tees</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('background.png') no-repeat center center fixed;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('images/background.png') no-repeat center center fixed;
       background-size: cover;
+      color: #fff;
     }
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: -1;
+
+    .promo-bar {
+      background: #ff0;
+      color: #111;
+      text-align: center;
+      padding: 10px;
+      font-weight: 600;
+      font-size: 1rem;
     }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 40px;
+      backdrop-filter: blur(6px);
+    }
+
+    .main-title {
+      font-size: 4rem;
+      font-weight: 800;
+      text-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+    }
+
+    .hero-sub {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #ff7f50;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .cta-button:hover {
+      background: #ff5722;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 30px;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    .product-card {
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(6px);
+      border-radius: 12px;
+      padding: 20px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      font-size: 1.3rem;
+      margin: 0 0 10px;
+    }
+
+    .product-card p {
+      font-size: 0.95rem;
+      color: #ddd;
+      margin-bottom: 15px;
+    }
+
+    .shop-btn {
+      padding: 10px 18px;
+      background: #ff7f50;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .shop-btn:hover {
+      background: #ff5722;
+    }
+
     .sticky-cta {
       position: fixed;
       bottom: 20px;
@@ -33,101 +124,58 @@
       text-decoration: none;
       box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     }
-    .sticky-cta:hover {
-      background: #ff5722;
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      color: #ccc;
     }
-    .model-image {
-      max-width: 90%;
-      max-height: 450px;
-      object-fit: contain;
-      margin-top: 10px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease;
-    }
-    .model-image:hover {
-      transform: scale(1.05);
-    }
-    .product {
-      background: transparent;
-      backdrop-filter: none;
+
+    @media (max-width: 768px) {
+      .main-title { font-size: 2.5rem; }
+      .product-card { width: 90%; }
     }
   </style>
 </head>
 <body>
+  <div class="promo-bar">
+    🚨 Order now to receive before July 4th – Limited stock available!
+  </div>
 
-<div style="background-color: yellow; color: black; padding: 10px; text-align: center; font-weight: bold;">
-  🎆 Order now to receive before July 4th – Limited stock available!
-</div>
+  <header>
+    <h1 class="main-title">GENERATION Z</h1>
+    <div class="hero-sub">1000 Limited Tees — No Restocks</div>
+    <a href="#shop" class="cta-button">Shop Now</a>
+  </header>
 
-<header class="hero">
-  <h1 class="main-title">GENERATION Z</h1>
-  <p>1000 Limited Tees — No Restocks</p>
-  <a href="#products" class="shop-button">Shop Now</a>
-  <p style="color: white; font-size: 0.85rem; margin-top: 10px">
-    🚨 Product coming soon — please stand by!
-  </p>
-</header>
-
-<main class="main-content">
-  <section id="products" class="product-grid">
-
-    <!-- Kids Flag Tee -->
-    <div class="product">
-      <img src="images/flag-tee-kids.jpg" alt="Kids Flag Tee" class="product-img" />
-      <h2>Kids Flag Tee – $20</h2>
-      <p>Perfect for July 4th, parades, or family photos...</p>
-      <p style="color: red; font-weight: bold;">🎁 Includes free patriotic glasses inside!</p>
-      <img src="images/products/flag-tee-kids-model.jpg" alt="Model wearing Kids Flag Tee" class="model-image" />
-      <a href="#" class="shop-button">Shop Kids Tee</a>
+  <main class="products" id="shop">
+    <div class="product-card">
+      <img src="images/flag-tee-1.jpg" alt="Flag Tee 1">
+      <h3>Flag Tee 1 – $25</h3>
+      <p>Bold patriotic style for fireworks, festivals, and barbecues.</p>
+      <a href="#" class="shop-btn">Buy on Amazon</a>
     </div>
 
-    <!-- Flag Tee 1 -->
-    <div class="product">
-      <img src="images/flag-tee-1.jpg" alt="Flag Tee 1" class="product-img" />
-      <h2>Flag Tee 1 – $25</h2>
-      <p>Bold patriotic style for summer events.</p>
-      <p style="color: red; font-weight: bold;">🎁 Includes free patriotic glasses inside!</p>
-      <div class="model-group">
-        <img src="images/products/flag-tee-1-male.jpg" alt="Model wearing Flag Tee 1" class="model-image" />
-        <img src="images/products/flag-tee-1-female.jpg" alt="Model wearing Flag Tee 1" class="model-image" />
-      </div>
-      <a href="#" class="shop-button">Shop Now</a>
+    <div class="product-card">
+      <img src="images/flag-tee-2.jpg" alt="Flag Tee 2">
+      <h3>Flag Tee 2 – $25</h3>
+      <p>Classic American flag print – premium cotton feel.</p>
+      <a href="#" class="shop-btn">Buy on Amazon</a>
     </div>
 
-    <!-- Flag Tee 2 -->
-    <div class="product">
-      <img src="images/flag-tee-2.jpg" alt="Flag Tee 2" class="product-img" />
-      <h2>Flag Tee 2 – $25</h2>
-      <p>Classic design with premium cotton comfort.</p>
-      <p style="color: red; font-weight: bold;">🎁 Includes free patriotic glasses inside!</p>
-      <div class="model-group">
-        <img src="images/products/flag-tee-2-male.jpg" alt="Model wearing Flag Tee 2" class="model-image" />
-        <img src="images/products/flag-tee-2-female.jpg" alt="Model wearing Flag Tee 2" class="model-image" />
-      </div>
-      <a href="#" class="shop-button">Shop Now</a>
+    <div class="product-card">
+      <img src="images/flag-tee-kids.jpg" alt="Kids Tee">
+      <h3>Kids Flag Tee – $20</h3>
+      <p>Perfect for toddlers and kids – includes 🎁 free patriotic glasses!</p>
+      <a href="#" class="shop-btn">Buy on Amazon</a>
     </div>
+  </main>
 
-    <!-- Flag Tee 3 -->
-    <div class="product">
-      <img src="images/flag-tee-3.jpg" alt="Flag Tee 3" class="product-img" />
-      <h2>Flag Tee 3 – $25</h2>
-      <p>Modern flag print perfect for Memorial Day.</p>
-      <p style="color: red; font-weight: bold;">🎁 Includes free patriotic glasses inside!</p>
-      <img src="images/products/flag-tee-3-back.jpg" alt="Back view Flag Tee 3" class="model-image" />
-      <img src="images/products/flag-tee-3-closeup.jpg" alt="Zoomed in design Flag Tee 3" class="model-image" />
-      <a href="#" class="shop-button">Shop Now</a>
-    </div>
+  <a href="#shop" class="sticky-cta">Shop the Drop →</a>
 
-  </section>
-</main>
-
-<!-- Sticky CTA -->
-<a href="#products" class="sticky-cta">Shop the Drop →</a>
-
-<footer>
-  <p>Follow us @genzbrand | generationzllp@gmail.com</p>
-</footer>
-
+  <footer>
+    Contact us: generationzllp@gmail.com • Follow @genzbrand
+  </footer>
 </body>
 </html>
