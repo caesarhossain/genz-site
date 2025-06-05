@@ -1,85 +1,110 @@
+/* === Base Reset and Font === */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #111;
-  color: #fff;
+  font-family: 'Orbitron', sans-serif; /* Orbitron gives a modern, techy Gen Z feel */
+  background-color: #111; /* Dark theme base background */
+  color: #fff; /* White text on dark background for contrast */
 }
+
+/* === Navigation Bar === */
 .navbar {
-  background-color: #000;
+  background-color: #000; /* Solid black navbar */
   color: #fff;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+/* Nav Links */
 .navbar a {
   color: #fff;
   text-decoration: none;
   margin-left: 1.5rem;
   font-weight: 500;
 }
+
+/* === Main Content Layout === */
 .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Ensures responsiveness */
   min-height: 100vh;
 }
+
+/* === Left Panel: Product Info === */
 .left-panel {
   flex: 1;
-  background-color: #1a1a1a;
+  background-color: #1a1a1a; /* Slight contrast from body */
   padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
+/* Product Title */
 .left-panel h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
+
+/* Price Label */
 .left-panel p.price {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
+
+/* Star Ratings Section */
 .stars {
   margin-bottom: 1.5rem;
 }
 .stars span {
-  color: gold;
+  color: gold; /* Highlight stars in gold */
   font-size: 1.2rem;
 }
+
+/* === CTA Buttons === */
 .buttons {
   display: flex;
   gap: 1rem;
   margin-top: 2rem;
 }
+
+/* Button Style */
 .buttons a {
   text-decoration: none;
-  background-color: #fff;
-  color: #000;
+  background-color: #fff; /* White button background */
+  color: #000; /* Black button text */
   padding: 0.75rem 2rem;
-  border-radius: 30px;
+  border-radius: 30px; /* Pill-shaped buttons */
   font-weight: bold;
 }
+
+/* === Right Panel: Product Image === */
 .right-panel {
   flex: 1;
-  background-color: #f3f3f3;
+  background-color: #f3f3f3; /* Light background for contrast */
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+/* Responsive Product Image */
 .right-panel img {
   width: 100%;
   max-width: 500px;
   height: auto;
 }
+
+/* === Mobile Responsive Styling === */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;
+    flex-direction: column; /* Stack vertically on smaller screens */
   }
   .left-panel, .right-panel {
     flex: 1 1 100%;
     padding: 2rem;
   }
   .left-panel h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* Adjust headline for small viewports */
   }
 }
