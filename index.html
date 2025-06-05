@@ -39,32 +39,43 @@
       color: #222;
       font-weight: bold;
     }
-    .product-grid {
+    .product-gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 2rem;
-      padding: 3rem 2rem 4rem;
+      padding: 2rem;
     }
-    .product {
-      background: rgba(255,255,255,0.95);
+    .product-card {
+      background: #fff;
       border-radius: 1rem;
-      overflow: hidden;
-      max-width: 280px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      max-width: 320px;
       text-align: center;
-      transition: transform 0.3s ease;
+      overflow: hidden;
     }
-    .product:hover {
-      transform: translateY(-5px);
-    }
-    .product img {
+    .product-card img {
       width: 100%;
+      height: auto;
       display: block;
     }
-    .product h3 {
-      font-size: 1.2rem;
-      margin: 1rem 0;
+    .product-card h3 {
+      font-size: 1.25rem;
+      margin: 0.75rem 0 0.25rem;
+    }
+    .product-card p {
+      font-size: 1rem;
+      margin: 0 0 1rem;
+    }
+    .buy-btn {
+      display: inline-block;
+      background: #8b0000;
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 1rem;
     }
     .shop-btn {
       display: inline-block;
@@ -106,18 +117,24 @@
 
   <div class="cta">Celebrate the 4th of July in Style</div>
 
-  <section class="product-grid">
-    <div class="product">
-      <img src="images/men-tee.png" alt="Men's Flag Tee" />
+  <section class="product-gallery">
+    <div class="product-card">
+      <img src="images/men-tee.png" alt="Men's Flag Tee">
       <h3>Men's Flag Tee</h3>
+      <p>$25 – Classic Fit, 100% Cotton</p>
+      <a href="#" class="buy-btn">Buy Now</a>
     </div>
-    <div class="product">
-      <img src="images/women-tee.png" alt="Women's Flag Tee" />
+    <div class="product-card">
+      <img src="images/women-tee.png" alt="Women's Flag Tee">
       <h3>Women's Flag Tee</h3>
+      <p>$25 – Tailored Fit, Soft Feel</p>
+      <a href="#" class="buy-btn">Buy Now</a>
     </div>
-    <div class="product">
-      <img src="images/kids-tee.png" alt="Kids Flag Tee" />
+    <div class="product-card">
+      <img src="images/kids-tee.png" alt="Kids Flag Tee">
       <h3>Kids Flag Tee</h3>
+      <p>$20 – Includes Free Patriotic Glasses</p>
+      <a href="#" class="buy-btn">Buy on Amazon</a>
     </div>
   </section>
 
