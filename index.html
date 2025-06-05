@@ -1,147 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generation Z | Patriotic Tees</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GENZLLP - Celebrate with Style</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: url('images/final_background_selected.jpg') no-repeat center center fixed;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: #fff;
+      padding: 2rem 1rem 1rem;
     }
-
-    .promo-banner {
-      background: yellow;
-      color: black;
-      text-align: center;
-      padding: 10px;
-      font-weight: bold;
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
     }
-
+    .banner {
+      background: #8b0000;
+      color: white;
+      padding: 1rem;
+      color: #1a1a1a;
+    }
     header {
       text-align: center;
-      padding: 80px 20px 30px;
-      background-color: rgba(0, 0, 0, 0.4);
-    }
-
-    header h1 {
-      font-size: 3.5rem;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
-    }
-
-    .shop-btn {
-      background: #ff7f50;
-      color: white;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 25px;
-      font-size: 1rem;
+      text-align: center;
       font-weight: bold;
-      cursor: pointer;
-      margin-top: 15px;
+      letter-spacing: 1px;
     }
-
-    .main-section {
+    .cta {
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 1rem;
+    }
+    .product-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
-      padding: 40px 20px;
-      background-color: rgba(0, 0, 0, 0.5);
+      gap: 2rem;
+      padding: 2rem;
     }
-
-    .product-card {
-      background: #fff;
-      color: #000;
-      border-radius: 12px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+    .product {
+      background: rgba(255,255,255,0.9);
+      border-radius: 1rem;
       overflow: hidden;
-      width: 300px;
+      max-width: 280px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
       text-align: center;
-      padding-bottom: 20px;
+      transition: transform 0.3s ease;
     }
-
-    .product-card img {
+    .product:hover {
+      transform: translateY(-5px);
+    }
+    .product img {
       width: 100%;
-      height: auto;
+      display: block;
     }
-
-    .product-card h2 {
-      font-size: 1.3rem;
-      margin: 15px 0 10px;
+    .product h3 {
+      font-size: 1.2rem;
+      margin: 1rem 0;
     }
-
-    .product-card p {
-      font-size: 0.95rem;
-      margin: 0 15px 10px;
+    .shop-btn {
+      display: inline-block;
+      background: #8b0000;
+      color: white;
+      padding: 0.75rem 2rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-weight: bold;
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
-
-    .product-card .shop-btn {
-      margin-top: 10px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      background: rgba(0,0,0,0.4);
-    }
-
     @media (max-width: 768px) {
       header h1 {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
+      }
+      .cta {
+        font-size: 1.2rem;
+      }
+      .shop-btn {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
       }
     }
   </style>
 </head>
 <body>
-  <div class="promo-banner">
-    🚨 Order now to receive before July 4th – Limited stock available!
-  </div>
-
   <header>
-    <h1>GENERATION Z</h1>
-    <p>1000 Limited Tees — No Restocks</p>
-    <button class="shop-btn" onclick="document.getElementById('shop').scrollIntoView({behavior: 'smooth'});">Shop Now</button>
+    <h1>GENZLLP</h1>
   </header>
 
-  <section class="main-section" id="shop">
-    <div class="product-card">
-      <img src="images/flag-tee-1.jpg" alt="Flag Tee 1">
-      <h2>Flag Tee 1 – $25</h2>
-      <p>Bold patriotic style for July 4th, BBQs, or parades.</p>
-      <button class="shop-btn">Buy on Amazon</button>
-    </div>
+  <div class="banner">MEMORIAL DAY SALE - Celebrate the 4th of July in Style</div>
+  <div class="cta">Patriotic Tees for the Whole Family</div>
 
-    <div class="product-card">
-      <img src="images/flag-tee-2.jpg" alt="Flag Tee 2">
-      <h2>Flag Tee 2 – $25</h2>
-      <p>Classic American flag design with premium cotton comfort.</p>
-      <button class="shop-btn">Buy on Amazon</button>
+  <section class="product-grid">
+    <div class="product">
+      <img src="men-tee.jpg" alt="Men's Flag Tee" />
+      <h3>Men's Flag Tee</h3>
     </div>
-
-    <div class="product-card">
-      <img src="images/flag-tee-3.jpg" alt="Flag Tee 3">
-      <h2>Flag Tee 3 – $25</h2>
-      <p>Modern take on stars & stripes, perfect for summer.</p>
-      <button class="shop-btn">Buy on Amazon</button>
+    <div class="product">
+      <img src="women-tee.jpg" alt="Women's Flag Tee" />
+      <h3>Women's Flag Tee</h3>
     </div>
-
-    <div class="product-card">
-      <img src="images/flag-tee-kids.jpg" alt="Kids Flag Tee">
-      <h2>Kids Tee – $20</h2>
-      <p>Matching tee for toddlers and kids – includes free patriotic glasses!</p>
-      <button class="shop-btn">Buy on Amazon</button>
+    <div class="product">
+      <img src="kids-tee.jpg" alt="Kids Flag Tee" />
+      <h3>Kids Flag Tee</h3>
     </div>
   </section>
 
-  <footer>
-    Follow us @genzbrand | generationzllp@gmail.com
-  </footer>
+  <a href="#" class="shop-btn">SHOP NOW</a>
 </body>
 </html>
