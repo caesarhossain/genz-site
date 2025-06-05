@@ -1,147 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GENZLLP - Celebrate with Style</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GENZLLP - Shop Patriotic Tees</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fdf6ec;
-      padding: 0;
+      background-color: #111;
+      color: #fff;
     }
-    .alert-bar {
-      background: #ffff00;
-      color: #000;
-      padding: 0.75rem 1rem;
-      text-align: center;
-      font-weight: bold;
-      font-size: 1rem;
+    .navbar {
+      background-color: #000;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    header {
-      text-align: center;
-      padding: 3rem 1rem 2rem;
-      background: linear-gradient(135deg, #ffcc70, #ff73a1, #a18cd1);
-      color: #ffffff;
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
     }
-    header h1 {
-      font-size: 2.5rem;
-      letter-spacing: 2px;
-      margin: 0;
-    }
-    .cta {
-      font-size: 1.8rem;
-      margin-top: 1rem;
-      font-weight: bold;
-    }
-    .product-section {
-      background-color: #ffffff;
-      padding: 2rem 1rem 4rem;
-    }
-    .product-gallery {
+    .container {
       display: flex;
       flex-wrap: wrap;
+      min-height: 100vh;
+    }
+    .left-panel {
+      flex: 1;
+      background-color: #1a1a1a;
+      padding: 3rem 2rem;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
-      gap: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
     }
-    .product-card {
-      background: #fff;
-      border-radius: 1rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      max-width: 320px;
-      text-align: center;
-      overflow: hidden;
-    }
-    .product-card img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .product-card h3 {
-      font-size: 1.25rem;
-      margin: 0.75rem 0 0.25rem;
-      color: #111;
-    }
-    .product-card p {
-      font-size: 1rem;
-      margin: 0 0 1rem;
-      color: #333;
-    }
-    .buy-btn {
-      display: inline-block;
-      background: #8b0000;
-      color: white;
-      padding: 0.5rem 1.5rem;
-      border-radius: 2rem;
-      text-decoration: none;
-      font-weight: bold;
+    .left-panel h1 {
+      font-size: 2.5rem;
       margin-bottom: 1rem;
     }
-    .shop-btn {
-      display: inline-block;
-      background: #8b0000;
-      color: white;
-      padding: 0.75rem 2rem;
-      border-radius: 2rem;
+    .left-panel p.price {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .stars {
+      margin-bottom: 1.5rem;
+    }
+    .stars span {
+      color: gold;
+      font-size: 1.2rem;
+    }
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .buttons a {
       text-decoration: none;
+      background-color: #fff;
+      color: #000;
+      padding: 0.75rem 2rem;
+      border-radius: 30px;
       font-weight: bold;
-      position: fixed;
-      bottom: 1.5rem;
-      right: 1.5rem;
-      z-index: 1000;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    .right-panel {
+      flex: 1;
+      background-color: #f3f3f3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .right-panel img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
     }
     @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.8rem;
+      .container {
+        flex-direction: column;
       }
-      .cta {
-        font-size: 1.2rem;
-        margin-top: 1rem;
+      .left-panel, .right-panel {
+        flex: 1 1 100%;
+        padding: 2rem;
       }
-      .shop-btn {
-        padding: 0.5rem 1.5rem;
-        font-size: 0.9rem;
+      .left-panel h1 {
+        font-size: 2rem;
       }
     }
   </style>
 </head>
 <body>
-  <div class="alert-bar">
-    🛖 Order now to receive before July 4th – Limited stock available!
+  <div class="navbar">
+    <div><strong>GENZLLP</strong></div>
+    <div>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Cart 🛒</a>
+    </div>
   </div>
 
-  <header>
-    <h1>GENZLLP</h1>
-    <div class="cta">Celebrate the 4th of July in Style</div>
-  </header>
-
-  <section class="product-section">
-    <div class="product-gallery">
-      <div class="product-card">
-        <img src="images/men-tee.png" alt="Men's Flag Tee">
-        <h3>Men's Flag Tee</h3>
-        <p>$25 – Classic Fit, 100% Cotton</p>
-        <a href="#" class="buy-btn">Buy Now</a>
+  <div class="container">
+    <div class="left-panel">
+      <h1>Flag Tee - Men's</h1>
+      <p class="price">$25.00</p>
+      <div class="stars">
+        <span>★★★★★</span> <small>(142 Reviews)</small>
       </div>
-      <div class="product-card">
-        <img src="images/women-tee.png" alt="Women's Flag Tee">
-        <h3>Women's Flag Tee</h3>
-        <p>$25 – Tailored Fit, Soft Feel</p>
-        <a href="#" class="buy-btn">Buy Now</a>
-      </div>
-      <div class="product-card">
-        <img src="images/kids-tee.png" alt="Kids Flag Tee">
-        <h3>Kids Flag Tee</h3>
-        <p>$20 – Includes Free Patriotic Glasses</p>
-        <a href="#" class="buy-btn">Buy on Amazon</a>
+      <p>• Classic Fit<br>• 100% Cotton<br>• Tagless Comfort<br>• Perfect for July 4th</p>
+      <div class="buttons">
+        <a href="#">Buy Now</a>
+        <a href="#">Learn More</a>
       </div>
     </div>
-  </section>
-
-  <a href="#" class="shop-btn">SHOP NOW</a>
+    <div class="right-panel">
+      <img src="images/men-tee.png" alt="Men's Flag Tee">
+    </div>
+  </div>
 </body>
 </html>
