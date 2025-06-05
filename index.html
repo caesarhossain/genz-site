@@ -8,8 +8,21 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('background.jpg') no-repeat center center fixed;
+      background: url('images/background.png') no-repeat center center fixed;
+      background-color: #fdf6ec;
       background-size: cover;
+      padding: 0;
+    }
+    .alert-bar {
+      background: #ffff00;
+      color: #000;
+      padding: 0.75rem 1rem;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    header {
+      text-align: center;
       padding: 2rem 1rem 1rem;
     }
     header h1 {
@@ -20,10 +33,6 @@
       background: #8b0000;
       color: white;
       padding: 1rem;
-      color: #1a1a1a;
-    }
-    header {
-      text-align: center;
       text-align: center;
       font-weight: bold;
       letter-spacing: 1px;
@@ -89,6 +98,10 @@
   </style>
 </head>
 <body>
+  <div class="alert-bar">
+    🛖 Order now to receive before July 4th – Limited stock available!
+  </div>
+
   <header>
     <h1>GENZLLP</h1>
   </header>
@@ -98,15 +111,15 @@
 
   <section class="product-grid">
     <div class="product">
-      <img src="men-tee.jpg" alt="Men's Flag Tee" />
+      <img src="images/men-tee.jpg" alt="Men's Flag Tee" />
       <h3>Men's Flag Tee</h3>
     </div>
     <div class="product">
-      <img src="women-tee.jpg" alt="Women's Flag Tee" />
+      <img src="images/women-tee.jpg" alt="Women's Flag Tee" />
       <h3>Women's Flag Tee</h3>
     </div>
     <div class="product">
-      <img src="kids-tee.jpg" alt="Kids Flag Tee" />
+      <img src="images/kids-tee.jpg" alt="Kids Flag Tee" />
       <h3>Kids Flag Tee</h3>
     </div>
   </section>
