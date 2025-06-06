@@ -11,7 +11,7 @@ body {
    Hero Banner Section
 ------------------------------ */
 .hero-banner {
-  background: url('hero.jpg') no-repeat center center; /* Background image for slogan */
+  background: url('../images/hero.jpg') no-repeat center center; /* Background image for slogan */
   background-size: cover;
   background-color: #222; /* Fallback color in case image fails */
   height: 100vh;
