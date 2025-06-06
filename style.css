@@ -1,31 +1,66 @@
-
+/* -----------------------------
+   Base Styles & Font
+------------------------------ */
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif; /* Modern, clean font */
   background: #ffffff;
 }
+
+/* -----------------------------
+   Hero Banner Section
+------------------------------ */
 .hero-banner {
-  background: url('hero.jpg') no-repeat center center;
+  background: url('hero.jpg') no-repeat center center; /* Background image for slogan */
   background-size: cover;
+  background-color: #222; /* Fallback color in case image fails */
   height: 100vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
 }
+
+.hero-banner h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent dark overlay */
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+/* -----------------------------
+   Section Title
+------------------------------ */
 .section-title {
   text-align: center;
   font-size: 2rem;
   margin: 2rem auto 0.5rem;
   color: #111;
 }
+
+/* -----------------------------
+   Product Gallery Section
+------------------------------ */
 .product-section {
   padding: 2rem 1rem 4rem;
   background: #f9f9f9;
 }
+
 .product-gallery {
   display: flex;
-  overflow-x: auto;
+  overflow-x: auto; /* Enables horizontal scrolling on small screens */
   gap: 2rem;
   justify-content: center;
+  padding: 0 1rem;
+  scroll-snap-type: x mandatory;
 }
+
+/* -----------------------------
+   Product Cards
+------------------------------ */
 .product-card {
   flex: 0 0 auto;
   width: 320px;
@@ -35,17 +70,41 @@ body {
   overflow: hidden;
   padding-bottom: 1rem;
   transition: transform 0.3s ease;
+  scroll-snap-align: start;
 }
+
 .product-card:hover {
   transform: scale(1.03);
 }
+
 .product-card .main-img {
   width: 100%;
   height: auto;
 }
+
 .product-card h3 {
   margin: 1rem;
+  font-size: 1.2rem;
 }
+
 .product-card p {
   margin: 0 1rem 1rem;
+  font-size: 1rem;
+}
+
+/* -----------------------------
+   Mobile Responsiveness
+------------------------------ */
+@media (max-width: 768px) {
+  .hero-banner h1 {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .product-card {
+    width: 280px;
+  }
 }
