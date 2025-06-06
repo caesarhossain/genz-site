@@ -1,14 +1,14 @@
-/* === Base Reset and Font === */
+/* === Base Reset and Typography === */
 body {
   margin: 0;
-  font-family: 'Orbitron', sans-serif; /* Orbitron gives a modern, techy Gen Z feel */
-  background-color: #111; /* Dark theme base background */
-  color: #fff; /* White text on dark background for contrast */
+  font-family: 'Lato', sans-serif; /* Clean and modern font suitable for Gen Z branding */
+  background-color: #fff;
+  color: #111;
 }
 
 /* === Navigation Bar === */
 .navbar {
-  background-color: #000; /* Solid black navbar */
+  background-color: #111; /* Solid black background for contrast */
   color: #fff;
   padding: 1rem 2rem;
   display: flex;
@@ -16,95 +16,95 @@ body {
   align-items: center;
 }
 
-/* Nav Links */
 .navbar a {
   color: #fff;
   text-decoration: none;
   margin-left: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-/* === Main Content Layout === */
-.container {
-  display: flex;
-  flex-wrap: wrap; /* Ensures responsiveness */
-  min-height: 100vh;
+/* === Hero Section === */
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #f72585, #7209b7); /* Gradient background for bold visual */
+  color: white;
 }
 
-/* === Left Panel: Product Info === */
-.left-panel {
-  flex: 1;
-  background-color: #1a1a1a; /* Slight contrast from body */
-  padding: 3rem 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* Product Title */
-.left-panel h1 {
-  font-size: 2.5rem;
+.hero h1 {
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
-/* Price Label */
-.left-panel p.price {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+.hero p {
+  font-size: 1.25rem;
 }
 
-/* Star Ratings Section */
-.stars {
-  margin-bottom: 1.5rem;
-}
-.stars span {
-  color: gold; /* Highlight stars in gold */
-  font-size: 1.2rem;
+/* === Product Section Wrapper === */
+.product-section {
+  padding: 3rem 1rem;
+  background: #f9f9f9; /* Soft background to contrast the cards */
 }
 
-/* === CTA Buttons === */
-.buttons {
+/* === Horizontal Scroll Gallery === */
+.product-gallery {
   display: flex;
-  gap: 1rem;
-  margin-top: 2rem;
+  overflow-x: auto;
+  gap: 2rem;
+  padding: 1rem 0;
 }
 
-/* Button Style */
-.buttons a {
-  text-decoration: none;
-  background-color: #fff; /* White button background */
-  color: #000; /* Black button text */
-  padding: 0.75rem 2rem;
-  border-radius: 30px; /* Pill-shaped buttons */
-  font-weight: bold;
+/* === Product Card === */
+.product-card {
+  flex: 0 0 auto; /* Prevent flex from stretching the card */
+  width: 300px;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
-/* === Right Panel: Product Image === */
-.right-panel {
-  flex: 1;
-  background-color: #f3f3f3; /* Light background for contrast */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.product-card:hover {
+  transform: scale(1.03); /* Hover effect for interactivity */
 }
 
-/* Responsive Product Image */
-.right-panel img {
+.product-card img {
   width: 100%;
-  max-width: 500px;
   height: auto;
 }
 
-/* === Mobile Responsive Styling === */
+.product-card h3 {
+  margin: 1rem;
+  font-size: 1.25rem;
+}
+
+.product-card p {
+  margin: 0 1rem 1rem;
+}
+
+/* === Buy Button === */
+.buy-btn {
+  display: block;
+  width: calc(100% - 2rem);
+  margin: 0 1rem 1rem;
+  padding: 0.75rem;
+  background: #f72585; /* Brand color */
+  color: white;
+  border: none;
+  border-radius: 30px; /* Pill-shaped button */
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* === Responsive Tweaks for Mobile === */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column; /* Stack vertically on smaller screens */
+  .hero h1 {
+    font-size: 2rem;
   }
-  .left-panel, .right-panel {
-    flex: 1 1 100%;
-    padding: 2rem;
-  }
-  .left-panel h1 {
-    font-size: 2rem; /* Adjust headline for small viewports */
+
+  .product-gallery {
+    gap: 1rem;
   }
 }
