@@ -8,7 +8,117 @@ body {
 
 /* === Navigation Bar === */
 .navbar {
+  background-color: #111/* === Base Reset and Typography === */
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif; /* Clean and modern font suitable for Gen Z branding */
+  background-color: #fff;
+  color: #111;
+}
+
+/* === Navigation Bar === */
+.navbar {
   background-color: #111; /* Solid black background for contrast */
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 600;
+}
+
+/* === Hero Section === */
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #ffffff 0%, #007bff 50%, #ff0000 100%); /* Red, white, and blue stripes */ /* Gradient background for bold visual */
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+}
+
+/* === Product Section Wrapper === */
+.product-section {
+  padding: 3rem 1rem;
+  background: #f9f9f9; /* Soft background to contrast the cards */
+}
+
+/* === Horizontal Scroll Gallery === */
+.product-gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+/* === Product Card === */
+.product-card {
+  flex: 0 0 auto; /* Prevent flex from stretching the card */
+  width: 300px;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.03); /* Hover effect for interactivity */
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card h3 {
+  margin: 1rem;
+  font-size: 1.25rem;
+}
+
+.product-card p {
+  margin: 0 1rem 1rem;
+}
+
+/* === Buy Button === */
+.buy-btn {
+  display: block;
+  width: calc(100% - 2rem);
+  margin: 0 1rem 1rem;
+  padding: 0.75rem;
+  background: #f72585; /* Brand color */
+  color: white;
+  border: none;
+  border-radius: 30px; /* Pill-shaped button */
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* === Responsive Tweaks for Mobile === */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .product-gallery {
+    gap: 1rem;
+  }
+}
+; /* Solid black background for contrast */
   color: #fff;
   padding: 1rem 2rem;
   display: flex;
