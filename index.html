@@ -3,46 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GENZLLP - Shop Patriotic Tees</title>
-  <!-- Google Fonts: Lato -->
+  <title>GENZLLP - We Are Generation Z</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background: #ffffff;
+    }
+
+    .hero-banner {
+      background: url('hero.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin: 2rem auto 0.5rem;
+      color: #111;
+    }
+
+    .product-section {
+      padding: 2rem 1rem 4rem;
+      background: #f9f9f9;
+    }
+
+    .product-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0 1rem;
+    }
+
+    .product-card {
+      width: 300px;
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      padding-bottom: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-card h3 {
+      margin: 1rem;
+    }
+
+    .product-card p {
+      margin: 0 1rem 1rem;
+    }
+  </style>
 </head>
 <body>
-  <div class="navbar">
-    <div><strong>GENZLLP</strong></div>
-    <div>
-      <a href="#">Shop</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-      <a href="#">Cart 🛒</a>
-    </div>
-  </div>
-
-  <section class="hero">
-    <h1>Celebrate the 4th in Style</h1>
-    <p>Bold. Patriotic. Gen Z.</p>
-  </section>
+  <div class="hero-banner"></div>
 
   <section class="product-section">
+    <h2 class="section-title">Shop Patriotic Tees</h2>
     <div class="product-gallery">
       <div class="product-card">
-        <img src="images/men-tee.png" alt="Men's Flag Tee" />
+        <img src="images/men-front.png" alt="Men's Flag Tee" />
         <h3>Men's Flag Tee</h3>
         <p>$25 – Classic Fit</p>
-        <a href="#" class="buy-btn">Buy Now</a>
       </div>
       <div class="product-card">
-        <img src="images/women-tee.png" alt="Women's Flag Tee" />
+        <img src="images/women-front.png" alt="Women's Flag Tee" />
         <h3>Women's Flag Tee</h3>
         <p>$25 – Tailored Fit</p>
-        <a href="#" class="buy-btn">Buy Now</a>
       </div>
       <div class="product-card">
-        <img src="images/kids-tee.png" alt="Kids Flag Tee" />
+        <img src="images/kids-front.png" alt="Kids Flag Tee" />
         <h3>Kids Flag Tee</h3>
         <p>$20 – Toddler Sizes</p>
-        <a href="#" class="buy-btn">Buy on Amazon</a>
       </div>
     </div>
   </section>
