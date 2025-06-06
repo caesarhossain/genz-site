@@ -12,11 +12,10 @@
       background: #ffffff;
     }
 
-    /* Hero Banner with fallback visibility and mobile-safe height */
     .hero-banner {
       background: url('images/hero.jpg') no-repeat center center;
       background-size: cover;
-      background-color: #222; /* fallback if image fails */
+      background-color: #222;
       min-height: 80vh;
       display: flex;
       align-items: center;
@@ -40,12 +39,7 @@
       margin: 3rem auto 1rem;
       color: #111;
     }
-<!-- Hero Banner -->
-<div class="hero-banner">
-  <div class="hero-overlay">
-    <h1>We Are Generation Z</h1>
-  </div>
-</div>
+
     .product-section {
       padding: 1rem 1rem 4rem;
       background: #f9f9f9;
@@ -105,7 +99,7 @@
   </style>
 </head>
 <body>
-  <!-- Fullscreen Hero Banner with fallback text -->
+  <!-- ✅ Correct Hero Banner outside of <style> -->
   <div class="hero-banner">
     <h1>We Are Generation Z</h1>
   </div>
@@ -114,21 +108,16 @@
   <section class="product-section">
     <h2 class="section-title">Shop Patriotic Tees</h2>
     <div class="product-gallery">
-      <!-- Men’s Tee -->
       <div class="product-card">
         <img src="images/men-front.png" alt="Men's Flag Tee" />
         <h3>Men's Flag Tee</h3>
         <p>$25 – Classic Fit</p>
       </div>
-
-      <!-- Women’s Tee -->
       <div class="product-card">
         <img src="images/women-front.png" alt="Women's Flag Tee" />
         <h3>Women's Flag Tee</h3>
         <p>$25 – Tailored Fit</p>
       </div>
-
-      <!-- Kids’ Tee -->
       <div class="product-card">
         <img src="images/kids-front.png" alt="Kids Flag Tee" />
         <h3>Kids Flag Tee</h3>
