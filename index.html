@@ -1,100 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GENZLLP - Shop Patriotic Tees</title>
-  <!-- Link to Lato font from Google Fonts -->
+  <!-- Google Fonts: Lato -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Lato', sans-serif;
-      background: #fff;
-      color: #111;
-    }
-    .navbar {
-      background-color: #111;
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .navbar a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 1.5rem;
-      font-weight: 600;
-    }
-    .hero {
-      padding: 4rem 2rem;
-      text-align: center;
-      background: linear-gradient(to right, #f72585, #7209b7);
-      color: white;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.25rem;
-    }
-    .product-section {
-      padding: 3rem 1rem;
-      background: #f9f9f9;
-    }
-    .product-gallery {
-      display: flex;
-      overflow-x: auto;
-      gap: 2rem;
-      padding: 1rem 0;
-    }
-    .product-card {
-      flex: 0 0 auto;
-      width: 300px;
-      background: white;
-      border-radius: 1rem;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      overflow: hidden;
-      transition: transform 0.3s ease;
-    }
-    .product-card:hover {
-      transform: scale(1.03);
-    }
-    .product-card img {
-      width: 100%;
-      height: auto;
-    }
-    .product-card h3 {
-      margin: 1rem;
-      font-size: 1.25rem;
-    }
-    .product-card p {
-      margin: 0 1rem 1rem;
-    }
-    .buy-btn {
-      display: block;
-      width: calc(100% - 2rem);
-      margin: 0 1rem 1rem;
-      padding: 0.75rem;
-      background: #f72585;
-      color: white;
-      border: none;
-      border-radius: 30px;
-      text-align: center;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-      .product-gallery {
-        gap: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="navbar">
@@ -115,19 +27,19 @@
   <section class="product-section">
     <div class="product-gallery">
       <div class="product-card">
-        <img src="images/men-tee.png" alt="Men's Flag Tee">
+        <img src="images/men-tee.png" alt="Men's Flag Tee" />
         <h3>Men's Flag Tee</h3>
         <p>$25 – Classic Fit</p>
         <a href="#" class="buy-btn">Buy Now</a>
       </div>
       <div class="product-card">
-        <img src="images/women-tee.png" alt="Women's Flag Tee">
+        <img src="images/women-tee.png" alt="Women's Flag Tee" />
         <h3>Women's Flag Tee</h3>
         <p>$25 – Tailored Fit</p>
         <a href="#" class="buy-btn">Buy Now</a>
       </div>
       <div class="product-card">
-        <img src="images/kids-tee.png" alt="Kids Flag Tee">
+        <img src="images/kids-tee.png" alt="Kids Flag Tee" />
         <h3>Kids Flag Tee</h3>
         <p>$20 – Toddler Sizes</p>
         <a href="#" class="buy-btn">Buy on Amazon</a>
