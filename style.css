@@ -27,7 +27,7 @@ body {
 .hero {
   padding: 4rem 2rem;
   text-align: center;
-  background: linear-gradient(to right, #f72585, #7209b7); /* Gradient background for bold visual */
+  background: linear-gradient(to right, #ffffff 0%, #007bff 50%, #ff0000 100%); /* Red, white, and blue stripes */ /* Gradient background for bold visual */
   color: white;
 }
 
