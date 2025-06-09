@@ -12,18 +12,12 @@ body {
 ------------------------------ */
 .hero-banner {
   background: url('images/hero-flag-group.png') no-repeat top center;
-  background-size: contain; /* ensures full image fits */
-  background-color: #222;
-  height: auto;
-  min-height: 100vh;
+  background-size: contain; /* makes the full image visible without cropping */
+  background-color: #222; /* fallback */
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-  box-sizing: border-box;
+  min-height: 100vh;
+  height: auto;
+  display: block;
 }
 
 .hero-banner h1 {
