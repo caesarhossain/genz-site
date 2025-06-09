@@ -11,33 +11,32 @@ body {
    Hero Banner Section
 ------------------------------ */
 .hero-banner {
-  background: url('images/hero-flag-group.png') no-repeat center center;
-  background-size: contain;         /* Ensures full image fits in frame */
+  background-image: url('images/hero-flag-group.png');
   background-repeat: no-repeat;
-  background-color: #222;           /* Fallback color */
-  height: 100vh;                    /* Use full viewport height */
+  background-position: center top;
+  background-size: cover;
+  background-color: #222;
+  height: 100vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   padding-bottom: 2rem;
-  background-position: top center;
-  background-attachment: scroll;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
-/* Hide the text overlay */
 .hero-banner h1 {
   display: none;
 }
 
-/* Mobile adjustment */
 @media (max-width: 768px) {
   .hero-banner {
-    height: 80vh;
-    background-size: cover; /* cover works better for mobile */
-    background-position: center top;
+    height: 85vh;
+    background-size: cover;
+    background-position: top center;
   }
 }
-
 /* -----------------------------
    Section Title
 ------------------------------ */
