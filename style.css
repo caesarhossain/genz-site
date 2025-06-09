@@ -11,20 +11,11 @@ body {
    Hero Banner Section
 ------------------------------ */
 .hero-banner {
-  background-image: url('images/hero-flag-group.png');
-  background-repeat: no-repeat;
-  background-position: center top;
+  background: url('images/hero-test.png') no-repeat center top;
   background-size: cover;
-  background-color: #222;
   height: 100vh;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: 2rem;
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
 }
+
 
 .hero-banner h1 {
   display: none;
