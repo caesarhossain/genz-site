@@ -12,20 +12,27 @@ body {
 ------------------------------ */
 .hero-banner {
   background: url('images/hero-test.png') no-repeat center top;
-  background-size: cover;
+  background-size: contain; /* show entire image */
+  background-color: #111; /* fallback */
   height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 2rem;
+  background-repeat: no-repeat;
 }
 
-
+/* Remove center overlay text */
 .hero-banner h1 {
   display: none;
 }
 
+/* Mobile Fix */
 @media (max-width: 768px) {
   .hero-banner {
-    height: 85vh;
     background-size: cover;
-    background-position: top center;
+    background-position: center top;
+    height: 85vh;
   }
 }
 /* -----------------------------
