@@ -11,13 +11,13 @@ body {
    Hero Banner Section
 ------------------------------ */
 .hero-banner {
-  background: url('images/hero-flag-group.png') no-repeat center top;
-  background-size: cover;
+  background: url('images/hero-flag-group.png') no-repeat top center;
+  background-size: 100% auto; /* ensures full width */
   min-height: 60vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 /* Hide overlay text */
