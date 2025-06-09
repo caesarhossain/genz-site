@@ -11,16 +11,15 @@ body {
    Hero Banner Section
 ------------------------------ */
 .hero-banner {
-  background: url('images/hero-flag-group.png') no-repeat center top;
-  background-size: contain;              /* Ensures full image is visible */
-  background-repeat: no-repeat;
-  background-color: #222;                /* Fallback */
-  height: auto;
-  min-height: 100vh;
-  width: 100%;
-  aspect-ratio: 16 / 9;                  /* Keeps aspect ratio across screens */
+  background: url('images/hero‑flag‑group.png') no-repeat center center;
+  background-size: cover;
+  background-position: center top;
+  min-height: 60vh;
+  display: flex;
+  align-items: flex-end; /* to keep models visible */
+  justify-content: center;
+  padding-bottom: 3rem;
 }
-
 .hero-banner h1 {
   font-size: 2.5rem;
   font-weight: 700;
