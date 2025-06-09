@@ -13,7 +13,7 @@ body {
 .hero-banner {
   background: url('images/hero-flag-group.png') no-repeat center center;
   background-size: cover;
-  background-color: #222;
+  background-color: #222; /* fallback if image fails */
   height: 100vh;
   width: 100%;
   position: relative;
@@ -23,6 +23,7 @@ body {
   color: white;
   text-align: center;
 }
+
 
 
 .hero-banner h1 {
