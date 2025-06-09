@@ -11,23 +11,19 @@ body {
    Hero Banner Section
 ------------------------------ */
 .hero-banner {
-  background: url('images/hero‑flag‑group.png') no-repeat center center;
+  background: url('images/hero-flag-group.png') no-repeat center top;
   background-size: cover;
-  background-position: center top;
   min-height: 60vh;
   display: flex;
-  align-items: flex-end; /* to keep models visible */
+  align-items: flex-end;
   justify-content: center;
   padding-bottom: 3rem;
 }
-.hero-banner h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent overlay */
-  padding: 1rem 2rem;
-  border-radius: 1rem;
-}
 
+/* Hide overlay text */
+.hero-banner h1 {
+  display: none;
+}
 /* -----------------------------
    Section Title
 ------------------------------ */
