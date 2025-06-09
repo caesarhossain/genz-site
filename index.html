@@ -6,32 +6,42 @@
   <title>GENZLLP – We Are Generation Z</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    /* -----------------------------
+       Base Styles & Font
+    ------------------------------ */
     body {
       margin: 0;
       font-family: 'Lato', sans-serif;
       background: #ffffff;
     }
 
+    /* -----------------------------
+       Hero Banner Section
+    ------------------------------ */
     .hero-banner {
-      background: url('images/hero.jpg') no-repeat center center;
+      background: url('images/hero-flag-group.png') no-repeat center center;
       background-size: cover;
-      background-color: #222;
-      min-height: 80vh;
+      background-color: #222; /* fallback if image fails */
+      height: 100vh;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
       text-align: center;
+      color: white;
     }
 
     .hero-banner h1 {
       font-size: 2.5rem;
       font-weight: 700;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.4); /* semi-transparent overlay */
       padding: 1rem 2rem;
       border-radius: 1rem;
     }
 
+    /* -----------------------------
+       Section Title
+    ------------------------------ */
     .section-title {
       text-align: center;
       font-size: 2.2rem;
@@ -40,6 +50,9 @@
       color: #111;
     }
 
+    /* -----------------------------
+       Product Gallery Section
+    ------------------------------ */
     .product-section {
       padding: 1rem 1rem 4rem;
       background: #f9f9f9;
@@ -82,6 +95,9 @@
       font-size: 1rem;
     }
 
+    /* -----------------------------
+       Responsive Design
+    ------------------------------ */
     @media (max-width: 768px) {
       .hero-banner h1 {
         font-size: 1.8rem;
@@ -96,28 +112,42 @@
         width: 90%;
       }
     }
+
+    @media (max-width: 480px) {
+      .hero-banner h1 {
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        margin-top: 2rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <!-- ✅ Correct Hero Banner outside of <style> -->
+
+  <!-- ✅ Hero Banner -->
   <div class="hero-banner">
     <h1>We Are Generation Z</h1>
   </div>
 
-  <!-- Product Display Section -->
+  <!-- ✅ Product Display Section -->
   <section class="product-section">
     <h2 class="section-title">Shop Patriotic Tees</h2>
     <div class="product-gallery">
+      <!-- Men’s Tee -->
       <div class="product-card">
         <img src="images/men-front.png" alt="Men's Flag Tee" />
         <h3>Men's Flag Tee</h3>
         <p>$25 – Classic Fit</p>
       </div>
+
+      <!-- Women’s Tee -->
       <div class="product-card">
         <img src="images/women-front.png" alt="Women's Flag Tee" />
         <h3>Women's Flag Tee</h3>
         <p>$25 – Tailored Fit</p>
       </div>
+
+      <!-- Kids’ Tee -->
       <div class="product-card">
         <img src="images/kids-front.png" alt="Kids Flag Tee" />
         <h3>Kids Flag Tee</h3>
@@ -125,5 +155,6 @@
       </div>
     </div>
   </section>
+
 </body>
 </html>
