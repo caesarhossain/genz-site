@@ -11,13 +11,14 @@ body {
    Hero Banner Section
 ------------------------------ */
 .hero-banner {
-  background: url('images/hero-flag-group.png') no-repeat top center;
-  background-size: contain; /* makes the full image visible without cropping */
-  background-color: #222; /* fallback */
-  width: 100%;
-  min-height: 100vh;
+  background: url('images/hero-flag-group.png') no-repeat center top;
+  background-size: contain;              /* Ensures full image is visible */
+  background-repeat: no-repeat;
+  background-color: #222;                /* Fallback */
   height: auto;
-  display: block;
+  min-height: 100vh;
+  width: 100%;
+  aspect-ratio: 16 / 9;                  /* Keeps aspect ratio across screens */
 }
 
 .hero-banner h1 {
