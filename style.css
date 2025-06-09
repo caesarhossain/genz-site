@@ -12,8 +12,8 @@ body {
 ------------------------------ */
 .hero-banner {
   background: url('images/hero-test.png') no-repeat center top;
-  background-size: contain; /* show entire image */
-  background-color: #111; /* fallback */
+  background-size: contain;
+  background-color: #111;
   height: 100vh;
   display: flex;
   align-items: flex-end;
@@ -22,7 +22,7 @@ body {
   background-repeat: no-repeat;
 }
 
-/* Remove center overlay text */
+/* Remove overlay */
 .hero-banner h1 {
   display: none;
 }
@@ -35,6 +35,7 @@ body {
     height: 85vh;
   }
 }
+
 /* -----------------------------
    Section Title
 ------------------------------ */
@@ -95,14 +96,9 @@ body {
 }
 
 /* -----------------------------
-   Responsive Design
+   Responsive Adjustments
 ------------------------------ */
 @media (max-width: 768px) {
-  .hero-banner h1 {
-    font-size: 1.8rem;
-    padding: 0.75rem 1.5rem;
-  }
-
   .section-title {
     font-size: 1.6rem;
   }
