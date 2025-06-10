@@ -5,175 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GENZLLP – We Are Generation Z</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    /* -----------------------------
-       Base Styles & Font
-    ------------------------------ */
-    body {
-      margin: 0;
-      font-family: 'Lato', sans-serif;
-      background: #ffffff;
-    }
-
-    /* -----------------------------
-       Hero Banner Section
-    ------------------------------ */
-    .hero-banner {
-      background: url('images/hero-test.png') no-repeat center top;
-      background-size: contain;
-      background-color: #111;
-      height: 100vh;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      padding-bottom: 2rem;
-    }
-
-    .hero-banner h1 {
-      display: none;
-    }
-
-    @media (max-width: 768px) {
-      .hero-banner {
-        background-size: cover;
-        background-position: center top;
-        height: 85vh;
-      }
-    }
-
-    /* -----------------------------
-       Section Title
-    ------------------------------ */
-    .section-title {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 700;
-      margin: 3rem auto 1rem;
-      color: #111;
-    }
-
-    /* -----------------------------
-       Product Gallery Section
-    ------------------------------ */
-    .product-section {
-      padding: 2rem 1rem 4rem;
-      background: #f9f9f9;
-    }
-
-    .product-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      padding: 0 1rem;
-    }
-
-    /* -----------------------------
-       Product Cards
-    ------------------------------ */
-    .product-card {
-      width: 320px;
-      background: white;
-      border-radius: 1rem;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      padding-bottom: 1rem;
-      transition: transform 0.3s ease;
-      text-align: center;
-    }
-
-    .product-card:hover {
-      transform: scale(1.03);
-    }
-
-    .product-card img {
-      width: 100%;
-      height: auto;
-    }
-
-    .product-card h3 {
-      margin: 1rem;
-      font-size: 1.25rem;
-    }
-
-    .product-card p {
-      margin: 0 1rem 0.5rem;
-      font-size: 1rem;
-    }
-
-    /* -----------------------------
-       Buy Now Button
-    ------------------------------ */
-    .btn {
-      display: inline-block;
-      margin: 0.5rem auto 0;
-      padding: 0.75rem 1.5rem;
-      background: #d32f2f;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 0.5rem;
-      font-weight: 700;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background: #b71c1c;
-    }
-
-    /* -----------------------------
-       Responsive Design
-    ------------------------------ */
-    @media (max-width: 768px) {
-      .section-title {
-        font-size: 1.6rem;
-      }
-
-      .product-card {
-        width: 90%;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .section-title {
-        font-size: 1.4rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!-- ✅ Hero Banner -->
   <div class="hero-banner">
-    <!-- background image handles visual -->
+    <!-- Image is handled by CSS background -->
   </div>
 
   <!-- ✅ Product Display Section -->
   <section class="product-section">
     <h2 class="section-title">Shop Patriotic Tees</h2>
     <div class="product-gallery">
+
       <!-- Men's Tee -->
       <div class="product-card">
-        <img src="images/men-front.png" alt="Men's Flag Tee" />
+        <img src="images/flag-tee-1.jpg" alt="Men's Flag Tee" />
         <h3>Men's Flag Tee</h3>
         <p>$25 – Classic Fit</p>
-        <a href="https://yourshopify.com/products/mens-flag-tee" class="btn" target="_blank">Buy Now</a>
+        <a href="https://yourshopify.com/products/mens-flag-tee" class="btn" target="_blank">Buy Now</a> <!-- TODO: Replace URL -->
       </div>
 
       <!-- Women's Tee -->
       <div class="product-card">
-        <img src="images/women-front.png" alt="Women's Flag Tee" />
+        <img src="images/flag-tee-2.jpg" alt="Women's Flag Tee" />
         <h3>Women's Flag Tee</h3>
         <p>$25 – Tailored Fit</p>
-        <a href="https://yourshopify.com/products/womens-flag-tee" class="btn" target="_blank">Buy Now</a>
+        <a href="https://yourshopify.com/products/womens-flag-tee" class="btn" target="_blank">Buy Now</a> <!-- TODO: Replace URL -->
       </div>
 
       <!-- Kids' Tee -->
       <div class="product-card">
-        <img src="images/kids-front.png" alt="Kids Flag Tee" />
+        <img src="images/flag-tee-3.jpg" alt="Kids Flag Tee" />
         <h3>Kids Flag Tee</h3>
         <p>$20 – Toddler Sizes</p>
-        <a href="https://yourshopify.com/products/kids-flag-tee" class="btn" target="_blank">Buy Now</a>
+        <a href="https://yourshopify.com/products/kids-flag-tee" class="btn" target="_blank">Buy Now</a> <!-- TODO: Replace URL -->
       </div>
+
     </div>
   </section>
 
