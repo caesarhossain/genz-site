@@ -32,6 +32,7 @@
       font-weight: 500;
     }
     .hero-banner {
+      position: relative;
       width: 100%;
       max-height: 90vh;
       overflow: hidden;
@@ -40,6 +41,15 @@
       width: 100%;
       height: auto;
       display: block;
+    }
+    .hero-text {
+      position: absolute;
+      bottom: 5%;
+      left: 5%;
+      color: white;
+      font-size: 3rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
     }
     .section-title {
       text-align: center;
@@ -96,9 +106,10 @@
     </div>
   </div>
 
-  <!-- Hero Image -->
+  <!-- Hero Image with Text -->
   <div class="hero-banner">
     <img src="images/hero-test.png" alt="We Are Generation Z">
+    <div class="hero-text">We Are Generation Z</div>
   </div>
 
   <!-- Product Section -->
