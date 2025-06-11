@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;500;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section-title, .navbar strong, .btn {
+  font-family: 'Orbitron', sans-serif;
+}
 /* === Base Styles === */
 * {
   margin: 0;
