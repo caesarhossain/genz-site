@@ -133,3 +133,20 @@ body {
   font-size: 0.9rem;
   color: #ccc;
 }
+/* === Mobile Layout (<=768px) === */
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 2rem;
+    bottom: 4%;
+    left: 4%;
+  }
+  .product-gallery {
+    flex-direction: column;
+    padding: 0 1rem 4rem;
+  }
+  .product-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
