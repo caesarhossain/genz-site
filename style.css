@@ -134,13 +134,14 @@ body {
   color: #ccc;
 }
 
-/* === Mobile Layout (<=768px) === */
+/* === Mobile Layout (<=768px) 
 @media (max-width: 768px) {
   .hero-text {
     font-size: 2rem;
     bottom: 4%;
     left: 4%;
   }
+=== */ -commented out
   .product-gallery {
     flex-direction: column;
     padding: 0 1rem 4rem;
