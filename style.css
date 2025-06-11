@@ -1,98 +1,113 @@
 /* === Base Reset and Font === */
 body {
   margin: 0;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Lato', sans-serif;
+  background-color: #ffffff;
+  color: #111;
+}
+
+/* === Hero Banner === */
+.hero-banner {
+  background: url('images/hero-test.png') no-repeat center top;
+  background-size: contain;
   background-color: #111;
-  color: #fff;
-}
-
-/* === Navigation Bar === */
-.navbar {
-  background-color: #000;
-  color: #fff;
-  padding: 1rem 2rem;
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 2rem;
 }
-.navbar a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 1.5rem;
-  font-weight: 500;
+.hero-banner h1 {
+  display: none;
 }
 
-/* === Main Content Layout === */
-.container {
+@media (max-width: 768px) {
+  .hero-banner {
+    background-size: cover;
+    background-position: center top;
+    height: 85vh;
+  }
+}
+
+/* === Section Title === */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 3rem auto 1rem;
+  color: #111;
+}
+
+/* === Product Section === */
+.product-section {
+  padding: 2rem 1rem 4rem;
+  background: #f9f9f9;
+}
+.product-gallery {
   display: flex;
   flex-wrap: wrap;
-  min-height: 100vh;
-}
-
-/* === Left Panel: Product Info === */
-.left-panel {
-  flex: 1;
-  background-color: #1a1a1a;
-  padding: 3rem 2rem;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-}
-.left-panel h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-.left-panel p.price {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-.stars {
-  margin-bottom: 1.5rem;
-}
-.stars span {
-  color: gold;
-  font-size: 1.2rem;
+  gap: 2rem;
+  padding: 0 1rem;
 }
 
-/* === CTA Buttons === */
-.buttons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 2rem;
+/* === Product Cards === */
+.product-card {
+  width: 320px;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding-bottom: 1rem;
+  transition: transform 0.3s ease;
+  text-align: center;
 }
-.buttons a {
-  text-decoration: none;
-  background-color: #fff;
-  color: #000;
-  padding: 0.75rem 2rem;
-  border-radius: 30px;
-  font-weight: bold;
+.product-card:hover {
+  transform: scale(1.03);
 }
-
-/* === Right Panel: Product Image === */
-.right-panel {
-  flex: 1;
-  background-color: #f3f3f3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.right-panel img {
+.product-card img {
   width: 100%;
-  max-width: 500px;
   height: auto;
 }
+.product-card h3 {
+  margin: 1rem;
+  font-size: 1.25rem;
+}
+.product-card p {
+  margin: 0 1rem 1rem;
+  font-size: 1rem;
+}
 
-/* === Mobile Responsive Styling === */
+/* === CTA Button === */
+.btn {
+  display: inline-block;
+  margin: 0.5rem auto 0;
+  padding: 0.75rem 1.5rem;
+  background: #d32f2f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #b71c1c;
+}
+
+/* === Responsive Design === */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
+  .section-title {
+    font-size: 1.6rem;
   }
-  .left-panel, .right-panel {
-    flex: 1 1 100%;
-    padding: 2rem;
+  .product-card {
+    width: 90%;
   }
-  .left-panel h1 {
-    font-size: 2rem;
+}
+
+@media (max-width: 480px) {
+  .hero-banner h1 {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
   }
 }
